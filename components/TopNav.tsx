@@ -16,26 +16,25 @@ export default function TopNav({ tabs, active, onChange, asOfDate }: Props) {
   return (
     <header className="sticky top-0 z-40 bg-[#FBFBF9]/85 backdrop-blur-[6px] border-b border-border">
       {/* Row 1 — masthead */}
-      <div className="mx-auto max-w-[1440px] px-8 lg:px-10 pt-5 pb-4">
+      <div className="mx-auto max-w-[1440px] px-8 lg:px-10 pt-6 pb-5">
         <div className="flex items-center justify-between gap-6">
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-6">
             <img
               src="/undp-logo.jpeg"
               alt="UNDP"
-              className="h-10 w-auto object-contain"
+              className="h-16 lg:h-20 w-auto object-contain"
             />
-            <div className="flex items-baseline gap-3">
-              <h1 className="serif-title text-[20px] leading-tight text-ink">
+            <div className="flex flex-col">
+              <h1 className="serif-title text-[26px] lg:text-[30px] leading-none text-ink">
                 UNDP Somalia
               </h1>
-              <span className="h-3.5 w-px bg-border translate-y-[2px]" />
-              <span className="text-[13px] text-muted tracking-tight">
+              <span className="mt-1.5 text-[12.5px] text-muted tracking-tight">
                 Partnership &amp; Communication Dashboard
               </span>
             </div>
           </div>
 
-          <div className="text-right">
+          <div className="text-right shrink-0">
             <div className="label-eyebrow !text-[10px]">As of</div>
             <div className="mt-1 text-[12.5px] font-mono tabular text-ink">
               {formatDateShort(asOfDate)}

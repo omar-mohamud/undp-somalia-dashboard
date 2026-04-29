@@ -2,13 +2,33 @@
 
 import { motion } from "framer-motion";
 
-type Props = { data: any };
+import type { DashboardData } from "@/lib/types";
+
+type Props = { data: DashboardData };
 
 export default function CommsTab({ data }: Props) {
+  const activity = data.kpis["Team Activity"] || [];
+  const find = (k: string) =>
+    activity.find((a) => a.indicator.toLowerCase().includes(k.toLowerCase()));
   const tiles = [
-    { id: "campaigns", label: "Active Campaigns", value: "—" },
-    { id: "media", label: "Media Products", value: "—" },
-    { id: "events", label: "Events", value: "—" },
+    {
+      id: "factSheets",
+      label: "Fact Sheets",
+      value: String(find("Fact Sheets")?.value ?? "—"),
+      hint: "donor- and project-level visibility",
+    },
+    {
+      id: "talkingPoints",
+      label: "Talking Points",
+      value: String(find("Talking Points")?.value ?? "—"),
+      hint: "for senior engagements",
+    },
+    {
+      id: "missions",
+      label: "Donor Meetings & Missions",
+      value: String(find("Donor Meetings/Missions")?.value ?? "—"),
+      hint: "this quarter",
+    },
   ];
   return (
     <section className="min-h-[60vh] flex flex-col">
@@ -18,7 +38,7 @@ export default function CommsTab({ data }: Props) {
         transition={{ duration: 0.5 }}
         className="mb-8"
       >
-        <div className="section-numeral">07 / Communications &amp; Visibility</div>
+        <div className="section-numeral">08 / Communications &amp; Visibility</div>
         <h2 className="serif-title text-[34px] md:text-[40px] leading-[1.05] mt-2 text-ink">
           Communications &amp; visibility
         </h2>
@@ -47,7 +67,7 @@ export default function CommsTab({ data }: Props) {
         </div>
       </motion.div>
 
-      {/* Three placeholder tiles */}
+      {/* Outputs delivered this quarter */}
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-3">
         {tiles.map((t, i) => (
           <motion.div
@@ -63,11 +83,11 @@ export default function CommsTab({ data }: Props) {
                 {String(i + 1).padStart(2, "0")}
               </span>
             </div>
-            <div className="mt-5 text-[44px] font-light tabular leading-none text-muted-2">
+            <div className="mt-5 text-[44px] font-light tabular leading-none text-ink">
               {t.value}
             </div>
             <div className="mt-4 text-[12px] text-muted leading-relaxed">
-              Awaiting team input.
+              {t.hint}
             </div>
           </motion.div>
         ))}

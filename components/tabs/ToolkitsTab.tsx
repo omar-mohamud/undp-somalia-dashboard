@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-type Props = { data: any };
+type Props = { data: unknown };
 
 const ICONS: Record<string, JSX.Element> = {
   sops: (
@@ -88,6 +88,22 @@ const ICONS: Record<string, JSX.Element> = {
   ),
 };
 
+const TOOLKITS = [
+  { id: "sops", title: "Partnership SOPs", description: "Standard operating procedures for donor engagement" },
+  { id: "briefs", title: "Engagement Briefs & Talking Points", description: "Donor-specific briefs for senior engagements" },
+  { id: "concepts", title: "Concept Notes Library", description: "Curated bank of concept notes and one-pagers" },
+  { id: "proposals", title: "Proposal Templates", description: "Templates aligned to UNDP and donor formats" },
+  { id: "agreements", title: "Standard Agreements & MoUs", description: "Pre-cleared partnership and contribution templates" },
+  { id: "dueDiligence", title: "Due Diligence Checklists", description: "Risk-tiered checklists for new partners" },
+  { id: "visibility", title: "Visibility & Communications Assets", description: "Brand guidelines, logos, donor recognition kits" },
+  { id: "calendar", title: "Donor Reporting Calendar", description: "Reporting cadence and obligations by donor" },
+  { id: "unity", title: "UNITY Guidance", description: "Workflow guidance for the UNITY platform" },
+  { id: "innovation", title: "Innovative Finance References", description: "Blended, climate and Islamic finance primers" },
+  { id: "privateSector", title: "Private Sector Due Diligence", description: "Vetting and engagement protocols" },
+  { id: "pooled", title: "Pooled Fund References", description: "Joint Fund and MPTF guidance" },
+  { id: "policy", title: "CPD, UNJSPF & NTP References", description: "Strategic frameworks and national plans" },
+];
+
 export default function ToolkitsTab({ data }: Props) {
   return (
     <section>
@@ -98,7 +114,7 @@ export default function ToolkitsTab({ data }: Props) {
         className="mb-6 flex items-baseline justify-between gap-6"
       >
         <div>
-          <div className="section-numeral">05 / Toolkits</div>
+          <div className="section-numeral">06 / Toolkits</div>
           <h2 className="serif-title text-[34px] md:text-[40px] leading-[1.05] mt-2 text-ink">
             Partnership knowledge hub
           </h2>
@@ -110,13 +126,13 @@ export default function ToolkitsTab({ data }: Props) {
         <div className="hidden lg:flex flex-col items-end gap-1 shrink-0">
           <div className="label-eyebrow">Resources curated</div>
           <div className="text-[44px] font-light leading-none tabular text-ink">
-            {data.toolkits.length}
+            {TOOLKITS.length}
           </div>
         </div>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-        {data.toolkits.map((t: any, i: number) => (
+        {TOOLKITS.map((t: any, i: number) => (
           <motion.a
             key={t.id}
             href="#"

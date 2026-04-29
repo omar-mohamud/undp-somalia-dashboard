@@ -12,19 +12,20 @@ import TeamTab from "./tabs/TeamTab";
 import CommsTab from "./tabs/CommsTab";
 import PipelineStagesTab from "./tabs/PipelineStagesTab";
 import { formatDate } from "@/lib/format";
+import type { DashboardData } from "@/lib/types";
 
 const TABS = [
   { id: "snapshot", label: "Snapshot" },
   { id: "donors", label: "Donor Relations" },
   { id: "rm", label: "Resource Mobilization" },
+  { id: "stages", label: "Pipeline Stages" },
   { id: "innovative", label: "Innovative Finance" },
   { id: "toolkits", label: "Toolkits" },
   { id: "team", label: "Team" },
   { id: "comms", label: "Comms & Visibility" },
-  { id: "stages", label: "Pipeline Stages" },
 ];
 
-type Props = { data: any };
+type Props = { data: DashboardData };
 
 export default function Dashboard({ data }: Props) {
   const [active, setActive] = useState<string>("snapshot");
@@ -32,7 +33,7 @@ export default function Dashboard({ data }: Props) {
   const renderTab = () => {
     switch (active) {
       case "snapshot":
-        return <SnapshotTab data={data} />;
+        return <SnapshotTab data={data} onNavigate={setActive} />;
       case "donors":
         return <DonorRelationsTab data={data} />;
       case "rm":
@@ -58,7 +59,7 @@ export default function Dashboard({ data }: Props) {
         tabs={TABS}
         active={active}
         onChange={setActive}
-        asOfDate={data.asOfDate}
+        asOfDate={data.meta.asOfDate}
       />
 
       <main className="flex-1">
@@ -82,7 +83,7 @@ export default function Dashboard({ data }: Props) {
             UNDP Somalia · Partnership &amp; Communication Team
           </div>
           <div className="font-mono tabular">
-            Updated {formatDate(data.lastUpdated)}
+            Updated {formatDate(data.meta.lastUpdated)}
           </div>
         </div>
       </footer>

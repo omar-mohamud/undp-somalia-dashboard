@@ -2,11 +2,53 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { initials } from "@/lib/format";
+import { formatCount } from "@/lib/format";
+import type { DashboardData } from "@/lib/types";
 
-type Props = { data: any };
+type Props = { data: DashboardData };
+
+const ROLES = [
+  { name: "Country Director", role: "Senior Strategic Lead", focus: "Overall partnership strategy & leadership" },
+  { name: "Partnership Specialist", role: "Partnerships Lead", focus: "Resource mobilization, donor relations" },
+  { name: "Resource Mobilization Officer", role: "RM Officer", focus: "Pipeline management, UNITY workflow" },
+  { name: "Innovative Finance Lead", role: "Innovative Finance", focus: "Blended, climate, Islamic instruments" },
+  { name: "Private Sector Engagement", role: "PS Officer", focus: "Corporate partnerships, due diligence" },
+  { name: "Communications Specialist", role: "Comms Lead", focus: "Visibility, donor reporting, media" },
+  { name: "Programme Analyst", role: "Programme Analyst", focus: "Portfolio analytics, delivery monitoring" },
+  { name: "Partnership Associate", role: "Associate", focus: "Coordination, knowledge management" },
+];
+
+const FAQS = [
+  {
+    q: "How is this dashboard refreshed?",
+    a: "The pipeline_and_programme workbook (v2 schema) is updated each month from the RM Pipeline Dashboard, the Cash Received ledger, the Programme Delivery Summary and the partnership KPI tracker. The dashboard reads directly from that file — no manual entry.",
+  },
+  {
+    q: "What does Probability-Weighted mean?",
+    a: "Each opportunity's pipeline value is multiplied by the success probability for its stage (A=90%, B=50%, C=30%, D=10%) — an expected-value view of resource mobilization across the portfolio.",
+  },
+  {
+    q: "Which stages map to UNITY?",
+    a: "Stages A through D align to the UNITY workflow: Highly Probable (A), Advanced (B), In Development (C), Early Stage (D).",
+  },
+  {
+    q: "Where do Cash figures come from?",
+    a: "Cash Received YTD is drawn directly from the Atlas/Quantum cash receipts ledger and reflects donor receipts cleared by the country office, not commitments.",
+  },
+];
+
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((s) => s[0]!.toUpperCase())
+    .join("");
+}
 
 export default function TeamTab({ data }: Props) {
+  const activity = data.kpis["Team Activity"] || [];
+  const dueDiligence = data.kpis["Due Diligence"] || [];
   return (
     <section>
       <motion.div
@@ -15,14 +57,52 @@ export default function TeamTab({ data }: Props) {
         transition={{ duration: 0.5 }}
         className="mb-6"
       >
-        <div className="section-numeral">06 / Team</div>
-        <h2 className="serif-title text-[34px] md:text-[40px] leading-[1.05] mt-2 text-ink">
+        <div className="section-numeral">07 / Team</div>
+        <h2 className="serif-title text-[34px] md:text-[42px] leading-[1.05] mt-2 text-ink">
           Partnership &amp; Communication Team
         </h2>
+        <p className="mt-2 text-[14px] text-muted max-w-2xl">
+          Who&rsquo;s on the team, how to reach them, and what they&rsquo;ve
+          delivered this quarter &mdash; pulled from the partnership KPI
+          tracker.
+        </p>
       </motion.div>
 
-      {/* Roles narrative */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-10 gap-y-8">
+      {/* Activity grid */}
+      <div className="mt-6">
+        <div className="flex items-baseline justify-between mb-4">
+          <div>
+            <div className="label-eyebrow">Quarterly activity</div>
+            <h3 className="serif-title text-[22px] mt-1 text-ink">
+              Outputs delivered Q1 2026
+            </h3>
+          </div>
+          <span className="text-[11px] font-mono uppercase tracking-eyebrow text-muted">
+            {activity.length} indicators tracked
+          </span>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2.5">
+          {activity.map((k, i) => (
+            <motion.div
+              key={k.indicator}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: i * 0.025 }}
+              className="bg-white border border-border rounded-[2px] p-4 tile-hover"
+            >
+              <div className="text-[26px] font-light tabular text-ink leading-none">
+                {formatCount(k.value)}
+              </div>
+              <div className="mt-2 text-[11px] text-muted leading-snug">
+                {k.indicator}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mandate + Contacts */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-10 gap-y-8 mt-12">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,11 +115,12 @@ export default function TeamTab({ data }: Props) {
           </h3>
           <div className="mt-4 space-y-4 text-[14px] text-ink leading-[1.7] max-w-[58ch]">
             <p>
-              The Partnership &amp; Communication Team is the country office&rsquo;s
-              front door for donors, vertical funds and private-sector partners.
-              The team designs the resource mobilization strategy, manages the
-              UNITY pipeline, and stewards relationships from first scoping
-              conversation through signed agreement and donor reporting.
+              The Partnership &amp; Communication Team is the country
+              office&rsquo;s front door for donors, vertical funds and
+              private-sector partners. The team designs the resource mobilization
+              strategy, manages the UNITY pipeline, and stewards relationships
+              from first scoping conversation through signed agreement and donor
+              reporting.
             </p>
             <p>
               Alongside core mobilization, the team leads communications and
@@ -64,16 +145,22 @@ export default function TeamTab({ data }: Props) {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="lg:col-span-5"
         >
-          <div className="label-eyebrow">Contacts</div>
+          <div className="label-eyebrow">Due diligence</div>
           <h3 className="serif-title text-[24px] mt-2 text-ink leading-snug">
-            How to reach us
+            Risk-tiered partner screening
           </h3>
           <div className="mt-4 bg-white border border-border rounded-[2px] divide-y divide-border-hair">
-            <ContactRow label="Resource mobilization" value="—" />
-            <ContactRow label="Donor reporting" value="—" />
-            <ContactRow label="Private sector" value="—" />
-            <ContactRow label="Communications" value="—" />
-            <ContactRow label="General inbox" value="—" />
+            {dueDiligence.map((d) => (
+              <div
+                key={d.indicator}
+                className="flex items-center justify-between px-5 py-3.5"
+              >
+                <span className="text-[13px] text-ink">{d.indicator}</span>
+                <span className="text-[14px] font-mono tabular text-ink">
+                  {formatCount(d.value)}
+                </span>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>
@@ -84,7 +171,7 @@ export default function TeamTab({ data }: Props) {
           <div>
             <div className="label-eyebrow">Members</div>
             <h3 className="serif-title text-[22px] mt-1 text-ink">
-              {data.team.length} on the team
+              {ROLES.length} on the team
             </h3>
           </div>
           <span className="text-[11px] font-mono uppercase tracking-eyebrow text-muted">
@@ -92,7 +179,7 @@ export default function TeamTab({ data }: Props) {
           </span>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {data.team.map((m: any, i: number) => (
+          {ROLES.map((m, i) => (
             <motion.div
               key={m.name + i}
               initial={{ opacity: 0, y: 6 }}
@@ -116,9 +203,6 @@ export default function TeamTab({ data }: Props) {
               <div className="mt-4 text-[11.5px] text-muted leading-relaxed line-clamp-2">
                 {m.focus}
               </div>
-              <div className="mt-3 text-[11px] font-mono tabular text-muted-2">
-                {m.email}
-              </div>
             </motion.div>
           ))}
         </div>
@@ -131,23 +215,12 @@ export default function TeamTab({ data }: Props) {
           About this dashboard
         </h3>
         <div className="mt-4 bg-white border border-border rounded-[2px] divide-y divide-border-hair">
-          {data.faqs.map((f: any, i: number) => (
+          {FAQS.map((f, i) => (
             <Faq key={i} q={f.q} a={f.a} initiallyOpen={i === 0} />
           ))}
         </div>
       </div>
     </section>
-  );
-}
-
-function ContactRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex items-center justify-between px-5 py-3.5">
-      <span className="text-[13px] text-ink">{label}</span>
-      <span className="text-[12.5px] font-mono tabular text-muted">
-        {value}
-      </span>
-    </div>
   );
 }
 

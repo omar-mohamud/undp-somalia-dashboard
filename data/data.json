@@ -1,193 +1,2059 @@
 {
-  "asOfDate": "2026-03-31",
-  "lastUpdated": "2026-04-30",
-  "snapshot": {
-    "donorsLandscape": { "label": "Donors Landscape", "value": 34, "suffix": "donors", "rag": "green", "trend": "up", "hint": "across 7 partner types" },
-    "gccEngagements": { "label": "GCC Engagements", "value": 4, "suffix": "active", "rag": "green", "trend": "up", "hint": "Saudi Arabia, Qatar, UAE, Kuwait" },
-    "privateSector": { "label": "Private Sector", "value": 5, "suffix": "active", "rag": "amber", "trend": "flat", "hint": "Hormuud, Premier Bank +3" },
-    "innovativeFinance": { "label": "Innovative Finance", "value": 6, "suffix": "in formation", "rag": "green", "trend": "up", "hint": "blended, climate, sukuk" },
-    "proposalsSubmitted": { "label": "Proposals Submitted", "value": 9, "suffix": "this quarter", "rag": "green", "trend": "up", "hint": "Q1 2026" },
-    "proposalsStalled": { "label": "Proposals Stalled", "value": 6, "suffix": "under review", "rag": "amber", "trend": "flat", "hint": "needing donor follow-up" },
-    "unityCompliance": { "label": "UNITY Compliance", "value": 85, "unit": "%", "rag": "green", "trend": "up", "hint": "of active workflow gates" },
-    "upcomingPriorities": { "label": "Upcoming Priorities", "value": 4, "suffix": "actions planned", "rag": "amber", "trend": "up", "hint": "next 90 days" }
+  "meta": {
+    "asOfDate": "2026-03-31",
+    "lastUpdated": "2026-04-30",
+    "reportDate": "2026-04-28",
+    "schemaVersion": "2.0"
   },
-  "pipeline": {
-    "totalValue": 110778733,
-    "adjusted2026": 8376230,
-    "adjusted2027": 11577387,
-    "cashReceived2026": 2559290,
-    "cashReceived2025": 11876410,
+  "totals": {
+    "pipelineTotal": 110778732.79,
+    "target2026Adj": 8376229.6,
+    "target2027Adj": 33911573.93,
+    "cashReceived2025": 11876409.68,
+    "cashReceived2026": 2559290.25,
     "opportunityCount": 44,
-    "donorCount": 29
+    "donorCountWithOpps": 29,
+    "donorCountTotal": 33,
+    "deliveryAnnualTarget": 54240796.08,
+    "deliveryTotalBudget": 33395236.61,
+    "deliveryTotalExpenditure": 4245818.15,
+    "deliveryPctVsTarget": 0.0783,
+    "deliveryPctVsBudget": 0.1271
   },
-  "delivery": {
-    "annualTarget": 54201195,
-    "totalBudget": 33395236,
-    "totalExpenditure": 4245818,
-    "pctVsTarget": 0.0783,
-    "pctVsBudget": 0.1271
-  },
-  "pipelineByStage": [
-    { "stage": "A", "label": "Highly Probable", "value": 6334239, "count": 3, "order": 1 },
-    { "stage": "B", "label": "Advanced", "value": 65470446, "count": 22, "order": 2 },
-    { "stage": "C", "label": "In Development", "value": 38974048, "count": 13, "order": 3 },
-    { "stage": "D", "label": "Early Stage", "value": 0, "count": 6, "order": 4 }
+  "donors": [
+    {
+      "id": "D001",
+      "name": "African Development Bank",
+      "type": "IFI",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 1558333.33,
+      "target2026Adj": 212500.0,
+      "target2027Adj": 566666.67,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1
+      }
+    },
+    {
+      "id": "D002",
+      "name": "African Export-Import Bank",
+      "type": "IFI",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 0.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "D": 1
+      }
+    },
+    {
+      "id": "D010",
+      "name": "Global Environment Facility",
+      "type": "Vertical_Fund",
+      "country": "Multilateral",
+      "opportunityCount": 5,
+      "pipelineTotal": 10497973.0,
+      "target2026Adj": 1444008.6,
+      "target2027Adj": 5070831.5,
+      "cashReceived": 0,
+      "stages": {
+        "B": 3,
+        "A": 2
+      }
+    },
+    {
+      "id": "D011",
+      "name": "GEF Small Grants Programme",
+      "type": "Vertical_Fund",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 3000000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D012",
+      "name": "Green Climate Fund",
+      "type": "Vertical_Fund",
+      "country": "Multilateral",
+      "opportunityCount": 2,
+      "pipelineTotal": 19507367.83,
+      "target2026Adj": 358004.5,
+      "target2027Adj": 4743472.47,
+      "cashReceived": 0,
+      "stages": {
+        "B": 2
+      }
+    },
+    {
+      "id": "D013",
+      "name": "Adaptation Fund",
+      "type": "Vertical_Fund",
+      "country": "Multilateral",
+      "opportunityCount": 2,
+      "pipelineTotal": 6000000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 3000000.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 2
+      }
+    },
+    {
+      "id": "D014",
+      "name": "UNDP Funding Windows",
+      "type": "Vertical_Fund",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 2449000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 1224500.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1
+      }
+    },
+    {
+      "id": "D015",
+      "name": "International Climate Initiative (IKI)",
+      "type": "Vertical_Fund",
+      "country": "Germany",
+      "opportunityCount": 1,
+      "pipelineTotal": 17160047.63,
+      "target2026Adj": 0.0,
+      "target2027Adj": 5148014.29,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D020",
+      "name": "Sweden (Sida)",
+      "type": "DAC",
+      "country": "Sweden",
+      "opportunityCount": 1,
+      "pipelineTotal": 3000000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 900000.0,
+      "cashReceived": 0.0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D021",
+      "name": "Switzerland (SDC)",
+      "type": "DAC",
+      "country": "Switzerland",
+      "opportunityCount": 2,
+      "pipelineTotal": 6500000.0,
+      "target2026Adj": 750000.0,
+      "target2027Adj": 1650000.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1,
+        "C": 1
+      }
+    },
+    {
+      "id": "D022",
+      "name": "Denmark",
+      "type": "DAC",
+      "country": "Denmark",
+      "opportunityCount": 1,
+      "pipelineTotal": 1000000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 300000.0,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D023",
+      "name": "Netherlands",
+      "type": "DAC",
+      "country": "Netherlands",
+      "opportunityCount": 1,
+      "pipelineTotal": 3500000.0,
+      "target2026Adj": 1750000.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1
+      }
+    },
+    {
+      "id": "D024",
+      "name": "Japan",
+      "type": "DAC",
+      "country": "Japan",
+      "opportunityCount": 2,
+      "pipelineTotal": 3555233.0,
+      "target2026Adj": 277616.5,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1,
+        "B": 1
+      }
+    },
+    {
+      "id": "D025",
+      "name": "Germany (BMZ/GIZ)",
+      "type": "DAC",
+      "country": "Germany",
+      "opportunityCount": 0,
+      "pipelineTotal": 0,
+      "target2026Adj": 0,
+      "target2027Adj": 0,
+      "cashReceived": 396547.34,
+      "stages": {}
+    },
+    {
+      "id": "D026",
+      "name": "Germany BMU",
+      "type": "DAC",
+      "country": "Germany",
+      "opportunityCount": 1,
+      "pipelineTotal": 324000.0,
+      "target2026Adj": 291600.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "A": 1
+      }
+    },
+    {
+      "id": "D027",
+      "name": "United Kingdom (FCDO)",
+      "type": "DAC",
+      "country": "United Kingdom",
+      "opportunityCount": 0,
+      "pipelineTotal": 0,
+      "target2026Adj": 0,
+      "target2027Adj": 0,
+      "cashReceived": 1037603.53,
+      "stages": {}
+    },
+    {
+      "id": "D028",
+      "name": "Finland & Switzerland (joint)",
+      "type": "DAC",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 1000000.0,
+      "target2026Adj": 300000.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D029",
+      "name": "Korea (KOICA)",
+      "type": "DAC",
+      "country": "Republic of Korea",
+      "opportunityCount": 1,
+      "pipelineTotal": 1000000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 300000.0,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D030",
+      "name": "European Commission (DG ECHO)",
+      "type": "DAC",
+      "country": "European Union",
+      "opportunityCount": 1,
+      "pipelineTotal": 1377778.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 688889.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1
+      }
+    },
+    {
+      "id": "D040",
+      "name": "Qatar (Government of)",
+      "type": "GCC",
+      "country": "Qatar",
+      "opportunityCount": 2,
+      "pipelineTotal": 5514000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 2254200.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1,
+        "C": 1
+      }
+    },
+    {
+      "id": "D041",
+      "name": "Qatar Airways",
+      "type": "PrivateSector",
+      "country": "Qatar",
+      "opportunityCount": 1,
+      "pipelineTotal": 0.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "D": 1
+      }
+    },
+    {
+      "id": "D042",
+      "name": "Saudi Arabia (KSrelief)",
+      "type": "GCC",
+      "country": "Saudi Arabia",
+      "opportunityCount": 1,
+      "pipelineTotal": 1560000.0,
+      "target2026Adj": 280000.0,
+      "target2027Adj": 500000.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1
+      }
+    },
+    {
+      "id": "D043",
+      "name": "Saudi Fund for Development",
+      "type": "GCC",
+      "country": "Saudi Arabia",
+      "opportunityCount": 2,
+      "pipelineTotal": 5400000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 2700000.0,
+      "cashReceived": 0.0,
+      "stages": {
+        "B": 2
+      }
+    },
+    {
+      "id": "D044",
+      "name": "OPEC Fund for International Development",
+      "type": "GCC",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 2900000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 1450000.0,
+      "cashReceived": 0,
+      "stages": {
+        "B": 1
+      }
+    },
+    {
+      "id": "D050",
+      "name": "Somalia Joint Fund (MPTF)",
+      "type": "MPTF",
+      "country": "Multilateral",
+      "opportunityCount": 4,
+      "pipelineTotal": 9375000.0,
+      "target2026Adj": 812500.0,
+      "target2027Adj": 3175000.0,
+      "cashReceived": 10068225.13,
+      "stages": {
+        "B": 2,
+        "C": 2
+      }
+    },
+    {
+      "id": "D052",
+      "name": "UN Peacebuilding Fund",
+      "type": "MPTF",
+      "country": "Multilateral",
+      "opportunityCount": 2,
+      "pipelineTotal": 3800000.0,
+      "target2026Adj": 1900000.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 1906358.93,
+      "stages": {
+        "B": 2
+      }
+    },
+    {
+      "id": "D060",
+      "name": "Multi-donor Action Fund (European)",
+      "type": "Multilateral",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 0.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "C": 1
+      }
+    },
+    {
+      "id": "D070",
+      "name": "UN Environment Programme",
+      "type": "UN_Agency",
+      "country": "Multilateral",
+      "opportunityCount": 0,
+      "pipelineTotal": 0,
+      "target2026Adj": 0,
+      "target2027Adj": 0,
+      "cashReceived": 207000.0,
+      "stages": {}
+    },
+    {
+      "id": "D080",
+      "name": "Hormuud Salaam Foundation",
+      "type": "Foundation",
+      "country": "Somalia",
+      "opportunityCount": 0,
+      "pipelineTotal": 0,
+      "target2026Adj": 0,
+      "target2027Adj": 0,
+      "cashReceived": 819965.0,
+      "stages": {}
+    },
+    {
+      "id": "D081",
+      "name": "Premier Bank",
+      "type": "PrivateSector",
+      "country": "Somalia",
+      "opportunityCount": 2,
+      "pipelineTotal": 800000.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 240000.0,
+      "cashReceived": 0,
+      "stages": {
+        "D": 1,
+        "C": 1
+      }
+    },
+    {
+      "id": "D082",
+      "name": "Optimus Paint / Stablepharma",
+      "type": "PrivateSector",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 0.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "D": 1
+      }
+    },
+    {
+      "id": "D083",
+      "name": "Tespack",
+      "type": "PrivateSector",
+      "country": "Multilateral",
+      "opportunityCount": 1,
+      "pipelineTotal": 0.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "D": 1
+      }
+    },
+    {
+      "id": "D084",
+      "name": "ANSA (Italian Press Agency)",
+      "type": "PrivateSector",
+      "country": "Italy",
+      "opportunityCount": 1,
+      "pipelineTotal": 0.0,
+      "target2026Adj": 0.0,
+      "target2027Adj": 0.0,
+      "cashReceived": 0,
+      "stages": {
+        "D": 1
+      }
+    }
   ],
   "donorTypeCounts": [
-    { "type": "DAC", "label": "DAC Countries", "count": 11, "color": "#006EB5" },
-    { "type": "GCC", "label": "GCC Countries", "count": 4, "color": "#3F8FC9" },
-    { "type": "Multilateral", "label": "Other Bilateral", "count": 1, "color": "#7DB1DC" },
-    { "type": "IFI", "label": "Multilateral Banks / IFIs", "count": 2, "color": "#9CC0DF" },
-    { "type": "MPTF", "label": "Somalia Joint Fund / MPTF", "count": 2, "color": "#0A1628" },
-    { "type": "PrivateSector", "label": "Private Sector Partners", "count": 5, "color": "#475569" },
-    { "type": "Foundation", "label": "Foundations / Philanthropies", "count": 1, "color": "#94A3B8" }
+    {
+      "type": "DAC",
+      "count": 11
+    },
+    {
+      "type": "Vertical_Fund",
+      "count": 6
+    },
+    {
+      "type": "PrivateSector",
+      "count": 5
+    },
+    {
+      "type": "GCC",
+      "count": 4
+    },
+    {
+      "type": "IFI",
+      "count": 2
+    },
+    {
+      "type": "MPTF",
+      "count": 2
+    },
+    {
+      "type": "Multilateral",
+      "count": 1
+    },
+    {
+      "type": "UN_Agency",
+      "count": 1
+    },
+    {
+      "type": "Foundation",
+      "count": 1
+    }
   ],
-  "pipelineByDonorType": [
-    { "type": "Vertical_Fund", "label": "Vertical Funds (Climate)", "value": 58614388, "count": 12 },
-    { "type": "DAC", "label": "DAC Countries", "value": 21257011, "count": 11 },
-    { "type": "GCC", "label": "GCC Countries", "value": 15374000, "count": 6 },
-    { "type": "MPTF", "label": "MPTF / Pooled Funds", "value": 13175000, "count": 6 },
-    { "type": "IFI", "label": "Multilateral Banks", "value": 1558333, "count": 2 },
-    { "type": "PrivateSector", "label": "Private Sector", "value": 800000, "count": 6 }
+  "portfolios": [
+    {
+      "id": "P01",
+      "code": "RCC",
+      "name": "Resilience & Climate Change",
+      "annualTarget": 16598360.67
+    },
+    {
+      "id": "P02",
+      "code": "ERID",
+      "name": "Economic Recovery & Inclusive Development",
+      "annualTarget": 11315176.72
+    },
+    {
+      "id": "P03",
+      "code": "TG",
+      "name": "Transformative Governance",
+      "annualTarget": 26327258.69
+    },
+    {
+      "id": "P04",
+      "code": "UN-RCO",
+      "name": "UN Resident Coordinator's Office",
+      "annualTarget": 0.0
+    },
+    {
+      "id": "P05",
+      "code": "PPM",
+      "name": "Portfolio, Partnership & PMSU Management",
+      "annualTarget": 0
+    }
   ],
-  "deliveryByPortfolio": [
-    { "code": "RCC", "name": "Resilience & Climate Change", "annualTarget": 16598363, "budget": 5390342, "expenditure": 608379, "pipeline": 78312388, "cash": 207000 },
-    { "code": "ERID", "name": "Economic Recovery & Inclusive Development", "annualTarget": 11315176, "budget": 8957459, "expenditure": 910434, "pipeline": 17111111, "cash": 1970693 },
-    { "code": "TG", "name": "Transformative Governance", "annualTarget": 26327256, "budget": 13895095, "expenditure": 1787253, "pipeline": 15355233, "cash": 12258007 }
-  ],
-  "topDonors": [
-    { "name": "Green Climate Fund", "type": "Vertical_Fund", "pipeline": 19507368, "cash": 0, "opportunities": 2 },
-    { "name": "International Climate Initiative (IKI)", "type": "Vertical_Fund", "pipeline": 17160048, "cash": 0, "opportunities": 1 },
-    { "name": "Global Environment Facility", "type": "Vertical_Fund", "pipeline": 10497973, "cash": 0, "opportunities": 5 },
-    { "name": "Somalia Joint Fund (MPTF)", "type": "MPTF", "pipeline": 9375000, "cash": 10068225, "opportunities": 4 },
-    { "name": "Switzerland (SDC)", "type": "DAC", "pipeline": 6500000, "cash": 0, "opportunities": 2 },
-    { "name": "Adaptation Fund", "type": "Vertical_Fund", "pipeline": 6000000, "cash": 0, "opportunities": 2 },
-    { "name": "Qatar (Government of)", "type": "GCC", "pipeline": 5514000, "cash": 0, "opportunities": 2 },
-    { "name": "Saudi Fund for Development", "type": "GCC", "pipeline": 5400000, "cash": 0, "opportunities": 2 },
-    { "name": "UN Peacebuilding Fund", "type": "MPTF", "pipeline": 3800000, "cash": 1906359, "opportunities": 2 },
-    { "name": "Japan", "type": "DAC", "pipeline": 3555233, "cash": 0, "opportunities": 2 }
-  ],
-  "donorRegister": [
-    { "donor": "Green Climate Fund", "type": "Vertical_Fund", "priorities": "Climate adaptation, ecosystem resilience", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "International Climate Initiative (IKI)", "type": "Vertical_Fund", "priorities": "NDC implementation, climate co-benefits", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Global Environment Facility", "type": "Vertical_Fund", "priorities": "Biodiversity, land degradation", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Adaptation Fund", "type": "Vertical_Fund", "priorities": "Local-level adaptation", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Somalia Joint Fund (MPTF)", "type": "MPTF", "priorities": "SDP priorities, pooled programming", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "UN Peacebuilding Fund", "type": "MPTF", "priorities": "Reconciliation, transitional justice", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "European Union", "type": "Multilateral", "priorities": "Governance, rule of law, migration", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "World Bank", "type": "IFI", "priorities": "Public sector reform, recovery", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "African Development Bank", "type": "IFI", "priorities": "Infrastructure, regional integration", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Switzerland (SDC)", "type": "DAC", "priorities": "Resilience, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Japan", "type": "DAC", "priorities": "Human security, peacebuilding", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Sweden (Sida)", "type": "DAC", "priorities": "Gender, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Norway", "type": "DAC", "priorities": "Climate, peace", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Germany (BMZ)", "type": "DAC", "priorities": "Resilience, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Finland", "type": "DAC", "priorities": "Education, gender", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Italy (AICS)", "type": "DAC", "priorities": "Migration, livelihoods", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Denmark", "type": "DAC", "priorities": "Climate, fragility", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Netherlands", "type": "DAC", "priorities": "Rule of law, water", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "United Kingdom (FCDO)", "type": "DAC", "priorities": "Stabilisation, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "United States (USAID)", "type": "DAC", "priorities": "Resilience, livelihoods", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Saudi Fund for Development", "type": "GCC", "priorities": "Infrastructure, education", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Qatar (Government of)", "type": "GCC", "priorities": "Humanitarian, infrastructure", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "United Arab Emirates", "type": "GCC", "priorities": "Health, education", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Kuwait Fund", "type": "GCC", "priorities": "Infrastructure", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Hormuud Telecom", "type": "PrivateSector", "priorities": "Digital inclusion, fintech", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Premier Bank", "type": "PrivateSector", "priorities": "SME finance, financial inclusion", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
-    { "donor": "Salaam Bank", "type": "PrivateSector", "priorities": "Islamic finance, MSMEs", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Dahabshiil Group", "type": "PrivateSector", "priorities": "Remittances, diaspora", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Coca-Cola Beverages Africa", "type": "PrivateSector", "priorities": "Youth, supply chains", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
-    { "donor": "Bill & Melinda Gates Foundation", "type": "Foundation", "priorities": "Health systems, agriculture", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" }
+  "stages": [
+    {
+      "code": "A",
+      "label": "Highly Probable",
+      "fullLabel": "A - Highly Probable",
+      "probability": 0.9,
+      "order": 1,
+      "description": "Approved or in final clearance"
+    },
+    {
+      "code": "B",
+      "label": "Advanced",
+      "fullLabel": "B - Advanced",
+      "probability": 0.5,
+      "order": 2,
+      "description": "Proposal submitted / under review / advanced negotiation"
+    },
+    {
+      "code": "C",
+      "label": "In Development",
+      "fullLabel": "C - In Development",
+      "probability": 0.3,
+      "order": 3,
+      "description": "Concept note stage / ongoing discussion"
+    },
+    {
+      "code": "D",
+      "label": "Early Stage",
+      "fullLabel": "D - Early Stage",
+      "probability": 0.1,
+      "order": 4,
+      "description": "Exploratory / scouting phase"
+    }
   ],
   "opportunities": [
-    { "programme": "Somalia Climate Resilience & Adaptation Programme", "donor": "Green Climate Fund", "portfolio": "RCC", "stage": "B", "pipeline": 12500000, "adjusted2026": 1875000, "probability": 0.65, "deadline": "2026-06-15" },
-    { "programme": "Coastal Ecosystems & Blue Economy", "donor": "Green Climate Fund", "portfolio": "RCC", "stage": "B", "pipeline": 7007368, "adjusted2026": 1051105, "probability": 0.6, "deadline": "2026-07-30" },
-    { "programme": "Just Transition for Pastoralist Communities", "donor": "International Climate Initiative (IKI)", "portfolio": "RCC", "stage": "C", "pipeline": 17160048, "adjusted2026": 1287004, "probability": 0.45, "deadline": "2026-09-01" },
-    { "programme": "Land Degradation Neutrality Programme", "donor": "Global Environment Facility", "portfolio": "RCC", "stage": "B", "pipeline": 4500000, "adjusted2026": 720000, "probability": 0.7, "deadline": "2026-05-20" },
-    { "programme": "Biodiversity & Protected Areas", "donor": "Global Environment Facility", "portfolio": "RCC", "stage": "C", "pipeline": 3000000, "adjusted2026": 270000, "probability": 0.4, "deadline": "2026-08-15" },
-    { "programme": "Local Adaptation in Banadir & Galmudug", "donor": "Adaptation Fund", "portfolio": "RCC", "stage": "B", "pipeline": 6000000, "adjusted2026": 600000, "probability": 0.55, "deadline": "2026-06-30" },
-    { "programme": "Joint SDG Fund — Local Governance", "donor": "Somalia Joint Fund (MPTF)", "portfolio": "TG", "stage": "A", "pipeline": 4250000, "adjusted2026": 1190000, "probability": 0.85, "deadline": "2026-04-30" },
-    { "programme": "Stabilisation in Recovered Areas", "donor": "UN Peacebuilding Fund", "portfolio": "TG", "stage": "B", "pipeline": 3800000, "adjusted2026": 950000, "probability": 0.7, "deadline": "2026-05-10" },
-    { "programme": "Public Sector Reform & Service Delivery", "donor": "Switzerland (SDC)", "portfolio": "TG", "stage": "B", "pipeline": 4500000, "adjusted2026": 540000, "probability": 0.6, "deadline": "2026-07-15" },
-    { "programme": "Inclusive Politics & Women in Leadership", "donor": "Sweden (Sida)", "portfolio": "TG", "stage": "C", "pipeline": 2800000, "adjusted2026": 280000, "probability": 0.5, "deadline": "2026-09-30" },
-    { "programme": "Federal-State Fiscal Transfers", "donor": "European Union", "portfolio": "TG", "stage": "C", "pipeline": 5500000, "adjusted2026": 412500, "probability": 0.45, "deadline": "2026-10-15" },
-    { "programme": "MSME Finance & Digital Economy", "donor": "Premier Bank", "portfolio": "ERID", "stage": "B", "pipeline": 2400000, "adjusted2026": 312000, "probability": 0.65, "deadline": "2026-05-25" },
-    { "programme": "Pastoralist Livelihoods Recovery", "donor": "Italy (AICS)", "portfolio": "ERID", "stage": "B", "pipeline": 3200000, "adjusted2026": 384000, "probability": 0.6, "deadline": "2026-06-20" },
-    { "programme": "Youth Employment & Skills", "donor": "Japan", "portfolio": "ERID", "stage": "C", "pipeline": 3555233, "adjusted2026": 213314, "probability": 0.4, "deadline": "2026-08-30" },
-    { "programme": "Renewable Energy Mini-Grids", "donor": "Qatar (Government of)", "portfolio": "RCC", "stage": "C", "pipeline": 5514000, "adjusted2026": 275700, "probability": 0.35, "deadline": "2026-11-01" },
-    { "programme": "Water for Resilience", "donor": "Saudi Fund for Development", "portfolio": "RCC", "stage": "C", "pipeline": 5400000, "adjusted2026": 270000, "probability": 0.35, "deadline": "2026-10-30" }
+    {
+      "id": "OPP0001",
+      "donorId": "D001",
+      "donorName": "African Development Bank",
+      "donorAlias": "AfDB",
+      "donorType": "IFI",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Humanitarian and Resilience Investing",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1558333.33,
+      "target2026": 425000.0,
+      "target2026Adj": 212500.0,
+      "target2027": 1133333.33,
+      "target2027Adj": 566666.67,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0002",
+      "donorId": "D002",
+      "donorName": "African Export-Import Bank",
+      "donorAlias": "AfreximBank",
+      "donorType": "IFI",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "TradeConnect Somalia Digital Trade Facilitation Initiative",
+      "stage": "D",
+      "stageLabel": "Early Stage",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0003",
+      "donorId": "D084",
+      "donorName": "ANSA (Italian Press Agency)",
+      "donorAlias": "Agenzia Nazionale Stampa Associata",
+      "donorType": "PrivateSector",
+      "donorCountry": "Italy",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Development Journalism Collaboration in Somalia and ANSA Distribution of Bilan Women Journalists",
+      "stage": "D",
+      "stageLabel": "Early Stage",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0004",
+      "donorId": "D030",
+      "donorName": "European Commission (DG ECHO)",
+      "donorAlias": "DG ECHO",
+      "donorType": "DAC",
+      "donorCountry": "European Union",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "SDRB (EIB-DG ECHO-DG INTPA-UNDP partnership)",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1377778.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 1377778.0,
+      "target2027Adj": 688889.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0005",
+      "donorId": "D024",
+      "donorName": "Japan",
+      "donorAlias": "Government of Japan",
+      "donorType": "DAC",
+      "donorCountry": "Japan",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Building Resilience Through Youth Skills Development in Somalia.",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0006",
+      "donorId": "D081",
+      "donorName": "Premier Bank",
+      "donorAlias": "Premier Bank",
+      "donorType": "PrivateSector",
+      "donorCountry": "Somalia",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Strategic Partnership for Inclusive Digital Transformation and Sustainable Finance in Somalia",
+      "stage": "D",
+      "stageLabel": "Early Stage",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0007",
+      "donorId": "D081",
+      "donorName": "Premier Bank",
+      "donorAlias": "Premier Bank",
+      "donorType": "PrivateSector",
+      "donorCountry": "Somalia",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Strengthening Somalia's Digital Economy",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 800000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 800000.0,
+      "target2027Adj": 240000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0008",
+      "donorId": "D041",
+      "donorName": "Qatar Airways",
+      "donorAlias": "Qatar Airways",
+      "donorType": "PrivateSector",
+      "donorCountry": "Qatar",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Support Somalia's economic transformation, diaspora engagement, and youth empowerment.",
+      "stage": "D",
+      "stageLabel": "Early Stage",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0009",
+      "donorId": "D021",
+      "donorName": "Switzerland (SDC)",
+      "donorAlias": "SDC",
+      "donorType": "DAC",
+      "donorCountry": "Switzerland",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Local Governance for Puntland and Somaliland",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3500000.0,
+      "target2026": 1500000.0,
+      "target2026Adj": 750000.0,
+      "target2027": 1500000.0,
+      "target2027Adj": 750000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0010",
+      "donorId": "D050",
+      "donorName": "Somalia Joint Fund (MPTF)",
+      "donorAlias": "SJF",
+      "donorType": "MPTF",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Saameynta 2",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1875000.0,
+      "target2026": 625000.0,
+      "target2026Adj": 312500.0,
+      "target2027": 1250000.0,
+      "target2027Adj": 625000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0011",
+      "donorId": "D050",
+      "donorName": "Somalia Joint Fund (MPTF)",
+      "donorAlias": "SJF",
+      "donorType": "MPTF",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "SDG Localization and Digital Tranformation aligned with NTP for economic growth",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 2000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 2000000.0,
+      "target2027Adj": 600000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0012",
+      "donorId": "D021",
+      "donorName": "Switzerland (SDC)",
+      "donorAlias": "Switzerland SDC",
+      "donorType": "DAC",
+      "donorCountry": "Switzerland",
+      "portfolioId": "P02",
+      "portfolioCode": "ERID",
+      "portfolioName": "Economic Recovery & Inclusive Development",
+      "programme": "Strengthening SDG Statistics Data Performance, coordination and Reporting in Somalia",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 900000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0013",
+      "donorId": "D040",
+      "donorName": "Qatar (Government of)",
+      "donorAlias": "Qatar",
+      "donorType": "GCC",
+      "donorCountry": "Qatar",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Blue Economy",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 1500000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0014",
+      "donorId": "D013",
+      "donorName": "Adaptation Fund",
+      "donorAlias": "Adaptation Fund (AF)",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Building Climate-Resilient Agro-Ecosystems through Solar-Powered Date Palm Agricultural Parks in Arid Zones of Djibouti and Somalia",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 1500000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0015",
+      "donorId": "D013",
+      "donorName": "Adaptation Fund",
+      "donorAlias": "Adaptation Fund (AF)",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Enhancing the Adaptive Capacity and Community Resilience of Pastoralists and Agro-pastoralists Communities in the Mandera Triangle",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 1500000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0016",
+      "donorId": "D026",
+      "donorName": "Germany BMU",
+      "donorAlias": "FED MInistry for Environment- BMU",
+      "donorType": "DAC",
+      "donorCountry": "Germany",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Climate Promise",
+      "stage": "A",
+      "stageLabel": "Highly Probable",
+      "pipelineTotal": 324000.0,
+      "target2026": 324000.0,
+      "target2026Adj": 291600.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0017",
+      "donorId": "D014",
+      "donorName": "UNDP Funding Windows",
+      "donorAlias": "Funding Windows",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Building Climate Resilience in Least Developed Countries",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 2449000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 2449000.0,
+      "target2027Adj": 1224500.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0018",
+      "donorId": "D010",
+      "donorName": "Global Environment Facility",
+      "donorAlias": "GEF",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "CBIT Somalia",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1478250.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 1478250.0,
+      "target2027Adj": 739125.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0019",
+      "donorId": "D010",
+      "donorName": "Global Environment Facility",
+      "donorAlias": "GEF",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Promoting low-carbon energy access through integrated renewable electricity, e-cooking, and productive use solutions in Somalia",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1776484.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0020",
+      "donorId": "D010",
+      "donorName": "Global Environment Facility",
+      "donorAlias": "GEF",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Somalia: BTR1+ BTR2/NC3",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1233000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 733000.0,
+      "target2027Adj": 366500.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0021",
+      "donorId": "D011",
+      "donorName": "GEF Small Grants Programme",
+      "donorAlias": "GEF Small Grant",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Indigenous Peoples Programme for Locally Led Adaptation in Africa",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0022",
+      "donorId": "D010",
+      "donorName": "Global Environment Facility",
+      "donorAlias": "Global Environment Facility (GEF)",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Conserving Terrestrial and Marine Biodiversity and restoring ecosystem",
+      "stage": "A",
+      "stageLabel": "Highly Probable",
+      "pipelineTotal": 2085093.0,
+      "target2026": 902601.0,
+      "target2026Adj": 812340.9,
+      "target2027": 1182492.0,
+      "target2027Adj": 1064242.8,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0023",
+      "donorId": "D010",
+      "donorName": "Global Environment Facility",
+      "donorAlias": "Global Environment Facility (GEF)",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Urban Resilience",
+      "stage": "A",
+      "stageLabel": "Highly Probable",
+      "pipelineTotal": 3925146.0,
+      "target2026": 701853.0,
+      "target2026Adj": 631667.7,
+      "target2027": 3223293.0,
+      "target2027Adj": 2900963.7,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0024",
+      "donorId": "D040",
+      "donorName": "Qatar (Government of)",
+      "donorAlias": "Government of Qatar",
+      "donorType": "GCC",
+      "donorCountry": "Qatar",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Sustainable Livestock Value Chain Management Project in Somalia Project",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 2514000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 2514000.0,
+      "target2027Adj": 754200.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0025",
+      "donorId": "D012",
+      "donorName": "Green Climate Fund",
+      "donorAlias": "Green Climate Fund (GCF)",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Climate Risk Resilient Water Security in Somalia (Biyo iyo Baad)",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 6715000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 6715000.0,
+      "target2027Adj": 3357500.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0026",
+      "donorId": "D012",
+      "donorName": "Green Climate Fund",
+      "donorAlias": "Green Climate Fund (GCF)",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "EW4ALL",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 12792367.83,
+      "target2026": 716009.0,
+      "target2026Adj": 358004.5,
+      "target2027": 2771944.94,
+      "target2027Adj": 1385972.47,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0027",
+      "donorId": "D015",
+      "donorName": "International Climate Initiative (IKI)",
+      "donorAlias": "IKI",
+      "donorType": "Vertical_Fund",
+      "donorCountry": "Germany",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Decarbonising Somalia's Blue Economy: Solar-Powered Cold-Chain and Low-Carbon Industrial Transformation of the Fisheries Value Chain",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 17160047.63,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 17160047.63,
+      "target2027Adj": 5148014.29,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0028",
+      "donorId": "D060",
+      "donorName": "Multi-donor Action Fund (European)",
+      "donorAlias": "MAF (Euroepan donors",
+      "donorType": "Multilateral",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Solar-Powered Cold-Chain for Climate-Smart Fisheries in Somalia",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0029",
+      "donorId": "D050",
+      "donorName": "Somalia Joint Fund (MPTF)",
+      "donorAlias": "MPTF-Somalia Joint Fund",
+      "donorType": "MPTF",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "BluInevst - Investing in Blue Economy to improve fishing community's livelihoods and coastal ecosystem",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 4000000.0,
+      "target2026": 1000000.0,
+      "target2026Adj": 500000.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 1500000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0030",
+      "donorId": "D044",
+      "donorName": "OPEC Fund for International Development",
+      "donorAlias": "OFID",
+      "donorType": "GCC",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Smart Clean Cooking in Somalia",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 2900000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 2900000.0,
+      "target2027Adj": 1450000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0031",
+      "donorId": "D082",
+      "donorName": "Optimus Paint / Stablepharma",
+      "donorAlias": "Optimus Paint/Stablepharma LTD",
+      "donorType": "PrivateSector",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Climate-smart Innovation for Equitable Immunization in Somalia",
+      "stage": "D",
+      "stageLabel": "Early Stage",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0032",
+      "donorId": "D042",
+      "donorName": "Saudi Arabia (KSrelief)",
+      "donorAlias": "SAU-Ksrelief",
+      "donorType": "GCC",
+      "donorCountry": "Saudi Arabia",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Capacity Building of SoDMA",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 1560000.0,
+      "target2026": 560000.0,
+      "target2026Adj": 280000.0,
+      "target2027": 1000000.0,
+      "target2027Adj": 500000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0033",
+      "donorId": "D043",
+      "donorName": "Saudi Fund for Development",
+      "donorAlias": "SFD",
+      "donorType": "GCC",
+      "donorCountry": "Saudi Arabia",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Advancing Youth Employment and Economic Inclusion in Somalia (TVET)",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 1500000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0034",
+      "donorId": "D043",
+      "donorName": "Saudi Fund for Development",
+      "donorAlias": "SFD",
+      "donorType": "GCC",
+      "donorCountry": "Saudi Arabia",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Enhancing Livelihoods through Livestock and Agriculture Development in Somalia",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 2400000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 2400000.0,
+      "target2027Adj": 1200000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0035",
+      "donorId": "D083",
+      "donorName": "Tespack",
+      "donorAlias": "Tespack",
+      "donorType": "PrivateSector",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P01",
+      "portfolioCode": "RCC",
+      "portfolioName": "Resilience & Climate Change",
+      "programme": "Powering Youth and Communities: UNDP?Tespack Solar for Resilience",
+      "stage": "D",
+      "stageLabel": "Early Stage",
+      "pipelineTotal": 0.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0036",
+      "donorId": "D028",
+      "donorName": "Finland & Switzerland (joint)",
+      "donorAlias": "Finland and Swiss",
+      "donorType": "DAC",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Support to Women Economic Empowerment",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 1000000.0,
+      "target2026": 1000000.0,
+      "target2026Adj": 300000.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0037",
+      "donorId": "D022",
+      "donorName": "Denmark",
+      "donorAlias": "Government of Denmark",
+      "donorType": "DAC",
+      "donorCountry": "Denmark",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Regional project (Somalia , Kenya and Ethiopia) on PVE and Reintegration of Former Fighters",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 1000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 1000000.0,
+      "target2027Adj": 300000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0038",
+      "donorId": "D024",
+      "donorName": "Japan",
+      "donorAlias": "Government of Japan",
+      "donorType": "DAC",
+      "donorCountry": "Japan",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Advancing Human Security through the HDP Nexus Approach in Crisis-Affected Countries",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 555233.0,
+      "target2026": 555233.0,
+      "target2026Adj": 277616.5,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0039",
+      "donorId": "D023",
+      "donorName": "Netherlands",
+      "donorAlias": "Government of Netherlands",
+      "donorType": "DAC",
+      "donorCountry": "Netherlands",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Support to Peace building focusing on Rehabilitation and Reintegration /PVE",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3500000.0,
+      "target2026": 3500000.0,
+      "target2026Adj": 1750000.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0040",
+      "donorId": "D029",
+      "donorName": "Korea (KOICA)",
+      "donorAlias": "KOREA INTERN. COOPERATION AGENCY",
+      "donorType": "DAC",
+      "donorCountry": "Republic of Korea",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Vocational Training and jobs for Vulnerable Youth",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 1000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 1000000.0,
+      "target2027Adj": 300000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0041",
+      "donorId": "D052",
+      "donorName": "UN Peacebuilding Fund",
+      "donorAlias": "Peace Building Fund",
+      "donorType": "MPTF",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Participatory dialogue in the wake of UNTMIS transition",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 3000000.0,
+      "target2026": 3000000.0,
+      "target2026Adj": 1500000.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0042",
+      "donorId": "D052",
+      "donorName": "UN Peacebuilding Fund",
+      "donorAlias": "Peace Building Fund",
+      "donorType": "MPTF",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Transitioning PCVE in Somalia: From UNTMIS to Somali Ownership",
+      "stage": "B",
+      "stageLabel": "Advanced",
+      "pipelineTotal": 800000.0,
+      "target2026": 800000.0,
+      "target2026Adj": 400000.0,
+      "target2027": 0.0,
+      "target2027Adj": 0.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0043",
+      "donorId": "D050",
+      "donorName": "Somalia Joint Fund (MPTF)",
+      "donorAlias": "Somalia Joint Fund (SJF)",
+      "donorType": "MPTF",
+      "donorCountry": "Multilateral",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Support to Peace building Architecture under Whole of Government Approach",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 1500000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 1500000.0,
+      "target2027Adj": 450000.0,
+      "reportDate": "2026-03-27"
+    },
+    {
+      "id": "OPP0044",
+      "donorId": "D020",
+      "donorName": "Sweden (Sida)",
+      "donorAlias": "Sweden",
+      "donorType": "DAC",
+      "donorCountry": "Sweden",
+      "portfolioId": "P03",
+      "portfolioCode": "TG",
+      "portfolioName": "Transformative Governance",
+      "programme": "Stabilization, PVE and Reintegration",
+      "stage": "C",
+      "stageLabel": "In Development",
+      "pipelineTotal": 3000000.0,
+      "target2026": 0.0,
+      "target2026Adj": 0.0,
+      "target2027": 3000000.0,
+      "target2027Adj": 900000.0,
+      "reportDate": "2026-03-27"
+    }
   ],
-  "agreementsReview": {
-    "reviewed": 13,
-    "signed": 8,
-    "pendingClearance": 4,
-    "complianceChecks": "Completed"
+  "cash": [
+    {
+      "id": "CASH0001",
+      "donorId": "D052",
+      "portfolioId": "P03",
+      "donorAlias": "PBF",
+      "donorCountry": "PeaceBuilding Fund",
+      "programme": "Ulema",
+      "agreementAmount": 1028921.67,
+      "cashReceived": 1028921.67,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "PBF"
+    },
+    {
+      "id": "CASH0002",
+      "donorId": "D050",
+      "portfolioId": "P03",
+      "donorAlias": "MPFT",
+      "donorCountry": "MPTF",
+      "programme": "CRP",
+      "agreementAmount": 2000000.0,
+      "cashReceived": 2000000.0,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0003",
+      "donorId": "D027",
+      "portfolioId": "P03",
+      "donorAlias": "FCDO",
+      "donorCountry": "Government of United Kingdom",
+      "programme": "JPP II",
+      "agreementAmount": 1037603.53,
+      "cashReceived": 1037603.53,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "Donor CSA"
+    },
+    {
+      "id": "CASH0004",
+      "donorId": "D025",
+      "portfolioId": "P02",
+      "donorAlias": "GIZ",
+      "donorCountry": "Germany GIZ",
+      "programme": "MOPIED",
+      "agreementAmount": 371970.41,
+      "cashReceived": 396547.34,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "Donor CSA"
+    },
+    {
+      "id": "CASH0005",
+      "donorId": "D050",
+      "portfolioId": "P02",
+      "donorAlias": "MPTF",
+      "donorCountry": "MPTF",
+      "programme": "Asaaska Fikir",
+      "agreementAmount": 99292.54,
+      "cashReceived": 99292.54,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0006",
+      "donorId": "D050",
+      "portfolioId": "P03",
+      "donorAlias": "MPTF-EU",
+      "donorCountry": "MPTF-EU",
+      "programme": "JPP II",
+      "agreementAmount": 871485.12,
+      "cashReceived": 871485.12,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0007",
+      "donorId": "D050",
+      "portfolioId": "P03",
+      "donorAlias": "MPTF",
+      "donorCountry": "MPTF",
+      "programme": "JPP II",
+      "agreementAmount": 1942559.48,
+      "cashReceived": 1942559.48,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0008",
+      "donorId": "D050",
+      "portfolioId": "P03",
+      "donorAlias": "MPTF",
+      "donorCountry": "MPTF",
+      "programme": "JJCP",
+      "agreementAmount": 1500000.0,
+      "cashReceived": 1500000.0,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0009",
+      "donorId": "D050",
+      "portfolioId": "P03",
+      "donorAlias": "MPTF",
+      "donorCountry": "MPTF",
+      "programme": "SRSP",
+      "agreementAmount": 3000000.0,
+      "cashReceived": 3000000.0,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0010",
+      "donorId": "D050",
+      "portfolioId": "P01",
+      "donorAlias": "MPTF",
+      "donorCountry": "MPTF",
+      "programme": "Feasibility for deep water",
+      "agreementAmount": 415763.0,
+      "cashReceived": 0.0,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Not Received",
+      "fundType": "MPTF"
+    },
+    {
+      "id": "CASH0011",
+      "donorId": "D020",
+      "portfolioId": "P01",
+      "donorAlias": "Sida",
+      "donorCountry": "Sweden",
+      "programme": "WED",
+      "agreementAmount": 2246958.0,
+      "cashReceived": 0.0,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Not Received",
+      "fundType": "Donor CSA"
+    },
+    {
+      "id": "CASH0012",
+      "donorId": "D043",
+      "portfolioId": "P01",
+      "donorAlias": "SFD",
+      "donorCountry": "Saudi",
+      "programme": "Sustainable Access to water",
+      "agreementAmount": 2000000.0,
+      "cashReceived": 0.0,
+      "date": "2025-06-01",
+      "year": 2025,
+      "quarter": 2,
+      "status": "Not Received",
+      "fundType": "Donor CSA"
+    },
+    {
+      "id": "CASH0013",
+      "donorId": "D070",
+      "portfolioId": "P01",
+      "donorAlias": "UNEP",
+      "donorCountry": null,
+      "programme": "Preparation of Second National Communication (SNC)",
+      "agreementAmount": 500000.0,
+      "cashReceived": 207000.0,
+      "date": "2026-06-01",
+      "year": 2026,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": null
+    },
+    {
+      "id": "CASH0014",
+      "donorId": "D080",
+      "portfolioId": "P02",
+      "donorAlias": "Hormuud Salaam Foundation(HSF)",
+      "donorCountry": null,
+      "programme": "Accelerating Socio-Economic Development in Somalia by Enhancing Business Environment, Youth Employability and Digitalization",
+      "agreementAmount": 820000.0,
+      "cashReceived": 819965.0,
+      "date": "2026-06-01",
+      "year": 2026,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": null
+    },
+    {
+      "id": "CASH0015",
+      "donorId": "D050",
+      "portfolioId": "P02",
+      "donorAlias": "Somalia Joint Fund (SJF)",
+      "donorCountry": null,
+      "programme": "Stregthening Local Governance and Decentralized Service Delivery ( Dowladkaab Programme",
+      "agreementAmount": 3274440.0,
+      "cashReceived": 654887.99,
+      "date": "2026-06-01",
+      "year": 2026,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": null
+    },
+    {
+      "id": "CASH0016",
+      "donorId": "D052",
+      "portfolioId": "P03",
+      "donorAlias": "Peace Building Fund (PBF)",
+      "donorCountry": null,
+      "programme": "PBF/SOM/B6: Wadajir Nabadeed Trust, Justice, and Security in Newly recovered Areas",
+      "agreementAmount": 1523328.67,
+      "cashReceived": 877437.26,
+      "date": "2026-06-01",
+      "year": 2026,
+      "quarter": 2,
+      "status": "Received",
+      "fundType": null
+    }
+  ],
+  "deliveryByPortfolio": [
+    {
+      "portfolioId": "P02",
+      "portfolio": "ERID",
+      "year": 2026,
+      "annualTarget": 11315176.72,
+      "totalBudget": 8957459.24,
+      "totalExpenditure": 910433.69,
+      "budgetBalance": 8047025.55,
+      "pctDeliveryBudget": 0.1,
+      "pctDeliveryAnnualTarget": 0.08
+    },
+    {
+      "portfolioId": "P05",
+      "portfolio": "Portfolio & Partnership Mgt",
+      "year": 2026,
+      "annualTarget": 0.0,
+      "totalBudget": 2504981.0,
+      "totalExpenditure": 369414.59,
+      "budgetBalance": 2135566.41,
+      "pctDeliveryBudget": 0.15,
+      "pctDeliveryAnnualTarget": 0
+    },
+    {
+      "portfolioId": "P01",
+      "portfolio": "RCC",
+      "year": 2026,
+      "annualTarget": 16598360.67,
+      "totalBudget": 5390342.3,
+      "totalExpenditure": 608378.84,
+      "budgetBalance": 4781963.46,
+      "pctDeliveryBudget": 0.11,
+      "pctDeliveryAnnualTarget": 0.04
+    },
+    {
+      "portfolioId": "P03",
+      "portfolio": "TG",
+      "year": 2026,
+      "annualTarget": 26327258.69,
+      "totalBudget": 13895095.15,
+      "totalExpenditure": 1787253.44,
+      "budgetBalance": 12107841.71,
+      "pctDeliveryBudget": 0.13,
+      "pctDeliveryAnnualTarget": 0.07
+    },
+    {
+      "portfolioId": "P04",
+      "portfolio": "UN-RCO",
+      "year": 2026,
+      "annualTarget": 0.0,
+      "totalBudget": 2647358.92,
+      "totalExpenditure": 570337.59,
+      "budgetBalance": 2077021.33,
+      "pctDeliveryBudget": 0.22,
+      "pctDeliveryAnnualTarget": 0
+    }
+  ],
+  "quarterlyTargets": [
+    {
+      "portfolioId": "P02",
+      "portfolio": "ERID",
+      "q1Actual": 910433.69,
+      "q2Target": 3468247.68,
+      "q3Target": 3468247.68,
+      "q4Target": 3468247.68,
+      "annualTarget": 11315176.72
+    },
+    {
+      "portfolioId": "P01",
+      "portfolio": "RCC",
+      "q1Actual": 608378.84,
+      "q2Target": 5329993.94,
+      "q3Target": 5329993.94,
+      "q4Target": 5329993.94,
+      "annualTarget": 16598360.67
+    },
+    {
+      "portfolioId": "P03",
+      "portfolio": "TG",
+      "q1Actual": 1787253.44,
+      "q2Target": 8180001.75,
+      "q3Target": 8180001.75,
+      "q4Target": 8180001.75,
+      "annualTarget": 26327258.69
+    }
+  ],
+  "kpis": {
+    "Agreements Review": [
+      {
+        "indicator": "Agreements Reviewed",
+        "value": 13,
+        "unit": "count"
+      },
+      {
+        "indicator": "Agreements Signed",
+        "value": 8,
+        "unit": "count"
+      },
+      {
+        "indicator": "Pending Clearance",
+        "value": 4,
+        "unit": "count"
+      },
+      {
+        "indicator": "Legal Clearness",
+        "value": 4,
+        "unit": "count"
+      }
+    ],
+    "UNITY Pipeline": [
+      {
+        "indicator": "Pipeline Value (USD M)",
+        "value": 8.2,
+        "unit": "USD M"
+      },
+      {
+        "indicator": "Submitted Opportunities",
+        "value": 6,
+        "unit": "count"
+      },
+      {
+        "indicator": "Under Review",
+        "value": 4,
+        "unit": "count"
+      },
+      {
+        "indicator": "Approved",
+        "value": 2,
+        "unit": "count"
+      }
+    ],
+    "Levy Tracking": [
+      {
+        "indicator": "Expected Levy (USD K)",
+        "value": 410,
+        "unit": "USD K"
+      },
+      {
+        "indicator": "Collected Levy (USD K)",
+        "value": 320,
+        "unit": "USD K"
+      },
+      {
+        "indicator": "Compliance %",
+        "value": 78,
+        "unit": "%"
+      }
+    ],
+    "Fund Applications": [
+      {
+        "indicator": "Applications Submitted",
+        "value": 9,
+        "unit": "count"
+      },
+      {
+        "indicator": "Approved",
+        "value": 13,
+        "unit": "count"
+      },
+      {
+        "indicator": "Pending",
+        "value": 6,
+        "unit": "count"
+      },
+      {
+        "indicator": "Funding Secured (USD M)",
+        "value": 2.6,
+        "unit": "USD M"
+      }
+    ],
+    "Due Diligence": [
+      {
+        "indicator": "Partners Screened",
+        "value": 10,
+        "unit": "count"
+      },
+      {
+        "indicator": "Low Risk",
+        "value": 6,
+        "unit": "count"
+      },
+      {
+        "indicator": "Medium Risk",
+        "value": 3,
+        "unit": "count"
+      },
+      {
+        "indicator": "High Risk",
+        "value": 1,
+        "unit": "count"
+      }
+    ],
+    "Team Activity": [
+      {
+        "indicator": "Workshops",
+        "value": 17,
+        "unit": "count"
+      },
+      {
+        "indicator": "Donor Meetings/Missions",
+        "value": 19,
+        "unit": "count"
+      },
+      {
+        "indicator": "Briefing Notes",
+        "value": 55,
+        "unit": "count"
+      },
+      {
+        "indicator": "Mission Reports",
+        "value": 5,
+        "unit": "count"
+      },
+      {
+        "indicator": "Fact Sheets",
+        "value": 13,
+        "unit": "count"
+      },
+      {
+        "indicator": "Draft Concept Notes",
+        "value": 25,
+        "unit": "count"
+      },
+      {
+        "indicator": "Proposals Developed",
+        "value": 7,
+        "unit": "count"
+      },
+      {
+        "indicator": "Sensitization New Partners",
+        "value": 7,
+        "unit": "count"
+      },
+      {
+        "indicator": "New Opportunities Identified",
+        "value": 9,
+        "unit": "count"
+      },
+      {
+        "indicator": "Donor Correspondence",
+        "value": 66,
+        "unit": "count"
+      },
+      {
+        "indicator": "Talking Points",
+        "value": 99,
+        "unit": "count"
+      },
+      {
+        "indicator": "Meeting Minutes",
+        "value": 50,
+        "unit": "count"
+      }
+    ]
   },
-  "fundApplications": {
-    "submitted": 9,
-    "approved": 13,
-    "pending": 6,
-    "fundingSecured": 2600000
-  },
-  "innovativeFinance": [
-    { "id": "blended", "title": "Blended Finance", "stage": "Pipeline", "count": 3, "value": 8200000, "description": "DFI co-investment structures under exploration" },
-    { "id": "climate", "title": "Climate Finance", "stage": "Pipeline", "count": 12, "value": 58614388, "description": "GCF, AF, IKI and GEF active opportunities" },
-    { "id": "green-bonds", "title": "Green / Blue Bonds", "stage": "Exploratory", "count": 1, "value": 0, "description": "Initial scoping with treasury partners" },
-    { "id": "sukuk", "title": "Islamic Finance / Sukuk", "stage": "Exploratory", "count": 2, "value": 0, "description": "Engagement with IsDB and regional Islamic banks" },
-    { "id": "insurance", "title": "Insurance / Risk Financing", "stage": "Concept", "count": 1, "value": 0, "description": "Climate risk insurance pilot in design" },
-    { "id": "diaspora", "title": "Diaspora Financing", "stage": "Concept", "count": 1, "value": 0, "description": "Diaspora bond feasibility under review" },
-    { "id": "crowd", "title": "Crowd Financing", "stage": "Exploratory", "count": 0, "value": 0, "description": "Platform partnerships being scoped" },
-    { "id": "private", "title": "Private Sector Pipeline", "stage": "Pipeline", "count": 6, "value": 800000, "description": "Hormuud, Premier Bank and others engaged" },
-    { "id": "bankable", "title": "Bankable Projects Readiness", "stage": "Concept", "count": 4, "value": 0, "description": "Project preparation facility in development" }
+  "pipelineByStage": [
+    {
+      "stage": "A",
+      "label": "Highly Probable",
+      "value": 6334239.0,
+      "count": 3,
+      "order": 1
+    },
+    {
+      "stage": "B",
+      "label": "Advanced",
+      "value": 65470446.16,
+      "count": 22,
+      "order": 2
+    },
+    {
+      "stage": "C",
+      "label": "In Development",
+      "value": 38974047.63,
+      "count": 13,
+      "order": 3
+    },
+    {
+      "stage": "D",
+      "label": "Early Stage",
+      "value": 0.0,
+      "count": 6,
+      "order": 4
+    }
   ],
-  "deRiskingInstruments": [
-    { "instrument": "Partial Credit Guarantees", "provider": "World Bank / MIGA", "status": "Available", "useCase": "Currency & political risk for blended deals" },
-    { "instrument": "First-Loss Capital", "provider": "Vertical Funds (GCF, GEF)", "status": "Available", "useCase": "Catalytic layer in blended structures" },
-    { "instrument": "Technical Assistance Facilities", "provider": "Bilateral DAC partners", "status": "Available", "useCase": "Project preparation & due diligence" },
-    { "instrument": "Climate Risk Insurance", "provider": "ARC, regional insurers", "status": "In design", "useCase": "Pastoralist drought response" },
-    { "instrument": "Currency Hedging", "provider": "TCX, MFX", "status": "Under review", "useCase": "Local-currency lending mitigation" }
+  "pipelineByDonorType": [
+    {
+      "type": "Vertical_Fund",
+      "value": 58614388.46,
+      "count": 12,
+      "donorCount": 6
+    },
+    {
+      "type": "DAC",
+      "value": 21257011.0,
+      "count": 11,
+      "donorCount": 9
+    },
+    {
+      "type": "GCC",
+      "value": 15374000.0,
+      "count": 6,
+      "donorCount": 4
+    },
+    {
+      "type": "MPTF",
+      "value": 13175000.0,
+      "count": 6,
+      "donorCount": 2
+    },
+    {
+      "type": "IFI",
+      "value": 1558333.33,
+      "count": 2,
+      "donorCount": 2
+    },
+    {
+      "type": "PrivateSector",
+      "value": 800000.0,
+      "count": 6,
+      "donorCount": 5
+    },
+    {
+      "type": "Multilateral",
+      "value": 0.0,
+      "count": 1,
+      "donorCount": 1
+    }
   ],
-  "toolkits": [
-    { "id": "sops", "title": "Partnership SOPs", "description": "Standard operating procedures for donor engagement" },
-    { "id": "briefs", "title": "Engagement Briefs & Talking Points", "description": "Donor-specific briefs for senior engagements" },
-    { "id": "concepts", "title": "Concept Notes Library", "description": "Curated bank of concept notes and one-pagers" },
-    { "id": "proposals", "title": "Proposal Templates", "description": "Templates aligned to UNDP and donor formats" },
-    { "id": "agreements", "title": "Standard Agreements & MoUs", "description": "Pre-cleared partnership and contribution templates" },
-    { "id": "dueDiligence", "title": "Due Diligence Checklists", "description": "Risk-tiered checklists for new partners" },
-    { "id": "visibility", "title": "Visibility & Communications Assets", "description": "Brand guidelines, logos, donor recognition kits" },
-    { "id": "calendar", "title": "Donor Reporting Calendar", "description": "Reporting cadence and obligations by donor" },
-    { "id": "unity", "title": "UNITY Guidance", "description": "Workflow guidance for the UNITY platform" },
-    { "id": "innovation", "title": "Innovative Finance References", "description": "Blended, climate and Islamic finance primers" },
-    { "id": "privateSector", "title": "Private Sector Due Diligence", "description": "Vetting and engagement protocols" },
-    { "id": "pooled", "title": "Pooled Fund References", "description": "Joint Fund and MPTF guidance" },
-    { "id": "policy", "title": "CPD, UNJSPF & NTP References", "description": "Strategic frameworks and national plans" }
-  ],
-  "team": [
-    { "name": "Country Director", "role": "Senior Strategic Lead", "email": "—", "focus": "Overall partnership strategy & leadership" },
-    { "name": "Partnership Specialist", "role": "Partnerships Lead", "email": "—", "focus": "Resource mobilization, donor relations" },
-    { "name": "Resource Mobilization Officer", "role": "RM Officer", "email": "—", "focus": "Pipeline management, UNITY workflow" },
-    { "name": "Innovative Finance Lead", "role": "Innovative Finance", "email": "—", "focus": "Blended, climate, Islamic instruments" },
-    { "name": "Private Sector Engagement", "role": "PS Officer", "email": "—", "focus": "Corporate partnerships, due diligence" },
-    { "name": "Communications Specialist", "role": "Comms Lead", "email": "—", "focus": "Visibility, donor reporting, media" },
-    { "name": "Programme Analyst", "role": "Programme Analyst", "email": "—", "focus": "Portfolio analytics, delivery monitoring" },
-    { "name": "Partnership Associate", "role": "Associate", "email": "—", "focus": "Coordination, knowledge management" }
-  ],
-  "faqs": [
-    { "q": "How is this dashboard refreshed?", "a": "The data file is updated each month from the pipeline tracker, UNITY exports, and the Atlas/Quantum cash receipts ledger." },
-    { "q": "What does Probability-Weighted 2026 represent?", "a": "It is the sum of the 2026 portion of each opportunity's pipeline value multiplied by its probability of success — an expected-value view of next-year resource mobilization." },
-    { "q": "Which stages map to UNITY?", "a": "Stages A through D align to the UNITY workflow: Highly Probable (A), Advanced (B), In Development (C), Early Stage (D)." },
-    { "q": "Where do Cash figures come from?", "a": "Cash Received YTD is drawn directly from Atlas/Quantum and reflects donor receipts cleared by the country office, not commitments." }
-  ],
-  "pipelineStages": [
-    { "id": "scouting", "label": "Scouting & Scoping", "stageMap": "D", "count": 6, "value": 0, "examples": ["Diaspora bond feasibility", "Sukuk scoping with IsDB", "Crowd-finance pilot exploration"] },
-    { "id": "co-design", "label": "Co-Designing", "stageMap": "C", "count": 13, "value": 38974048, "examples": ["Just Transition (IKI)", "Federal-State Fiscal Transfers (EU)", "Youth Employment & Skills (Japan)"] },
-    { "id": "drafting", "label": "Drafting", "stageMap": "B (15)", "count": 15, "value": 44600000, "examples": ["Coastal Ecosystems & Blue Economy", "Land Degradation Neutrality", "Public Sector Reform"] },
-    { "id": "submission", "label": "Submission", "stageMap": "B (7)", "count": 7, "value": 20870446, "examples": ["Climate Resilience & Adaptation (GCF)", "Local Adaptation (Adaptation Fund)", "Stabilisation in Recovered Areas"] },
-    { "id": "approved", "label": "Approved", "stageMap": "A", "count": 3, "value": 6334239, "examples": ["Joint SDG Fund — Local Governance", "Pastoralist Livelihoods Recovery", "MSME Finance Pilot"] }
-  ],
-  "communications": {
-    "campaigns": { "active": "—", "label": "Active Campaigns" },
-    "media": { "active": "—", "label": "Media Products" },
-    "events": { "active": "—", "label": "Events" }
-  }
+  "pipelineByPortfolio": [
+    {
+      "portfolioCode": "RCC",
+      "value": 78312388.46,
+      "count": 23
+    },
+    {
+      "portfolioCode": "ERID",
+      "value": 17111111.33,
+      "count": 12
+    },
+    {
+      "portfolioCode": "TG",
+      "value": 15355233.0,
+      "count": 9
+    }
+  ]
 }
