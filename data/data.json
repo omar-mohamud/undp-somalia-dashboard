@@ -1,0 +1,64 @@
+{
+  "asOfDate": "2026-03-31",
+  "lastUpdated": "2026-04-30",
+  "kpis": {
+    "totalPipeline": 110778733,
+    "adjustedPipeline2026": 8376230,
+    "adjustedPipeline2027": 23154775,
+    "cashReceived2026": 2559290,
+    "cashReceived2025": 11876410,
+    "annualTarget": 54200000,
+    "totalBudget": 33100000,
+    "totalExpenditure": 4200000,
+    "pctDeliveryTarget": 0.0775,
+    "pctDeliveryBudget": 0.1269,
+    "opportunityCount": 44,
+    "donorCount": 29
+  },
+  "pipelineByStage": [
+    { "stage": "B", "label": "Advanced", "value": 65470000, "count": 14, "order": 2 },
+    { "stage": "C", "label": "In Development", "value": 38970000, "count": 17, "order": 3 },
+    { "stage": "A", "label": "Highly Probable", "value": 6330000, "count": 2, "order": 1 },
+    { "stage": "D", "label": "Early Stage", "value": 0, "count": 11, "order": 4 }
+  ],
+  "pipelineByDonorType": [
+    { "type": "Vertical_Fund", "label": "Vertical Funds", "value": 58610000 },
+    { "type": "DAC", "label": "DAC Bilateral", "value": 21260000 },
+    { "type": "GCC", "label": "GCC", "value": 15370000 },
+    { "type": "MPTF", "label": "Pooled Funds", "value": 13180000 },
+    { "type": "IFI", "label": "IFIs", "value": 1560000 },
+    { "type": "PrivateSector", "label": "Private Sector", "value": 800000 }
+  ],
+  "byPortfolio": [
+    { "code": "RCC", "name": "Resilience & Climate Change", "pipeline": 78000000, "cash": 0, "target": 18000000 },
+    { "code": "ERID", "name": "Economic Recovery & Inclusive Development", "pipeline": 17000000, "cash": 1000000, "target": 18000000 },
+    { "code": "TG", "name": "Transformative Governance", "pipeline": 15000000, "cash": 1000000, "target": 18000000 },
+    { "code": "CO", "name": "Country Office Cross-Cutting", "pipeline": 778733, "cash": 559290, "target": 200000 }
+  ],
+  "cashByMonth": [
+    { "month": "Jan", "y2025": 820000, "y2026": 510000 },
+    { "month": "Feb", "y2025": 1640000, "y2026": 1410000 },
+    { "month": "Mar", "y2025": 2510000, "y2026": 2559290 },
+    { "month": "Apr", "y2025": 3540000, "y2026": null },
+    { "month": "May", "y2025": 4620000, "y2026": null },
+    { "month": "Jun", "y2025": 5710000, "y2026": null },
+    { "month": "Jul", "y2025": 6890000, "y2026": null },
+    { "month": "Aug", "y2025": 8020000, "y2026": null },
+    { "month": "Sep", "y2025": 9180000, "y2026": null },
+    { "month": "Oct", "y2025": 10210000, "y2026": null },
+    { "month": "Nov", "y2025": 11020000, "y2026": null },
+    { "month": "Dec", "y2025": 11876410, "y2026": null }
+  ],
+  "topDonors": [
+    { "rank": 1, "name": "European Union", "type": "DAC", "pipeline": 18400000, "cash": 1240000 },
+    { "rank": 2, "name": "World Bank", "type": "IFI", "pipeline": 15600000, "cash": 0 },
+    { "rank": 3, "name": "Green Climate Fund", "type": "Vertical_Fund", "pipeline": 14800000, "cash": 0 },
+    { "rank": 4, "name": "Sweden (Sida)", "type": "DAC", "pipeline": 11900000, "cash": 820000 },
+    { "rank": 5, "name": "Global Environment Facility", "type": "Vertical_Fund", "pipeline": 9700000, "cash": 0 },
+    { "rank": 6, "name": "United Arab Emirates", "type": "GCC", "pipeline": 8900000, "cash": 320000 },
+    { "rank": 7, "name": "Saudi Fund for Development", "type": "GCC", "pipeline": 6470000, "cash": 0 },
+    { "rank": 8, "name": "Norway", "type": "DAC", "pipeline": 5800000, "cash": 510000 },
+    { "rank": 9, "name": "FCDO (UK)", "type": "DAC", "pipeline": 4900000, "cash": 380000 },
+    { "rank": 10, "name": "Germany (BMZ)", "type": "DAC", "pipeline": 4100000, "cash": 290000 }
+  ]
+}
