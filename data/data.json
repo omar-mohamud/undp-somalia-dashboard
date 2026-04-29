@@ -1,64 +1,193 @@
 {
   "asOfDate": "2026-03-31",
   "lastUpdated": "2026-04-30",
-  "kpis": {
-    "totalPipeline": 110778733,
-    "adjustedPipeline2026": 8376230,
-    "adjustedPipeline2027": 23154775,
+  "snapshot": {
+    "donorsLandscape": { "label": "Donors Landscape", "value": 34, "suffix": "donors", "rag": "green", "trend": "up", "hint": "across 7 partner types" },
+    "gccEngagements": { "label": "GCC Engagements", "value": 4, "suffix": "active", "rag": "green", "trend": "up", "hint": "Saudi Arabia, Qatar, UAE, Kuwait" },
+    "privateSector": { "label": "Private Sector", "value": 5, "suffix": "active", "rag": "amber", "trend": "flat", "hint": "Hormuud, Premier Bank +3" },
+    "innovativeFinance": { "label": "Innovative Finance", "value": 6, "suffix": "in formation", "rag": "green", "trend": "up", "hint": "blended, climate, sukuk" },
+    "proposalsSubmitted": { "label": "Proposals Submitted", "value": 9, "suffix": "this quarter", "rag": "green", "trend": "up", "hint": "Q1 2026" },
+    "proposalsStalled": { "label": "Proposals Stalled", "value": 6, "suffix": "under review", "rag": "amber", "trend": "flat", "hint": "needing donor follow-up" },
+    "unityCompliance": { "label": "UNITY Compliance", "value": 85, "unit": "%", "rag": "green", "trend": "up", "hint": "of active workflow gates" },
+    "upcomingPriorities": { "label": "Upcoming Priorities", "value": 4, "suffix": "actions planned", "rag": "amber", "trend": "up", "hint": "next 90 days" }
+  },
+  "pipeline": {
+    "totalValue": 110778733,
+    "adjusted2026": 8376230,
+    "adjusted2027": 11577387,
     "cashReceived2026": 2559290,
     "cashReceived2025": 11876410,
-    "annualTarget": 54200000,
-    "totalBudget": 33100000,
-    "totalExpenditure": 4200000,
-    "pctDeliveryTarget": 0.0775,
-    "pctDeliveryBudget": 0.1269,
     "opportunityCount": 44,
     "donorCount": 29
   },
+  "delivery": {
+    "annualTarget": 54201195,
+    "totalBudget": 33395236,
+    "totalExpenditure": 4245818,
+    "pctVsTarget": 0.0783,
+    "pctVsBudget": 0.1271
+  },
   "pipelineByStage": [
-    { "stage": "B", "label": "Advanced", "value": 65470000, "count": 14, "order": 2 },
-    { "stage": "C", "label": "In Development", "value": 38970000, "count": 17, "order": 3 },
-    { "stage": "A", "label": "Highly Probable", "value": 6330000, "count": 2, "order": 1 },
-    { "stage": "D", "label": "Early Stage", "value": 0, "count": 11, "order": 4 }
+    { "stage": "A", "label": "Highly Probable", "value": 6334239, "count": 3, "order": 1 },
+    { "stage": "B", "label": "Advanced", "value": 65470446, "count": 22, "order": 2 },
+    { "stage": "C", "label": "In Development", "value": 38974048, "count": 13, "order": 3 },
+    { "stage": "D", "label": "Early Stage", "value": 0, "count": 6, "order": 4 }
+  ],
+  "donorTypeCounts": [
+    { "type": "DAC", "label": "DAC Countries", "count": 11, "color": "#006EB5" },
+    { "type": "GCC", "label": "GCC Countries", "count": 4, "color": "#3F8FC9" },
+    { "type": "Multilateral", "label": "Other Bilateral", "count": 1, "color": "#7DB1DC" },
+    { "type": "IFI", "label": "Multilateral Banks / IFIs", "count": 2, "color": "#9CC0DF" },
+    { "type": "MPTF", "label": "Somalia Joint Fund / MPTF", "count": 2, "color": "#0A1628" },
+    { "type": "PrivateSector", "label": "Private Sector Partners", "count": 5, "color": "#475569" },
+    { "type": "Foundation", "label": "Foundations / Philanthropies", "count": 1, "color": "#94A3B8" }
   ],
   "pipelineByDonorType": [
-    { "type": "Vertical_Fund", "label": "Vertical Funds", "value": 58610000 },
-    { "type": "DAC", "label": "DAC Bilateral", "value": 21260000 },
-    { "type": "GCC", "label": "GCC", "value": 15370000 },
-    { "type": "MPTF", "label": "Pooled Funds", "value": 13180000 },
-    { "type": "IFI", "label": "IFIs", "value": 1560000 },
-    { "type": "PrivateSector", "label": "Private Sector", "value": 800000 }
+    { "type": "Vertical_Fund", "label": "Vertical Funds (Climate)", "value": 58614388, "count": 12 },
+    { "type": "DAC", "label": "DAC Countries", "value": 21257011, "count": 11 },
+    { "type": "GCC", "label": "GCC Countries", "value": 15374000, "count": 6 },
+    { "type": "MPTF", "label": "MPTF / Pooled Funds", "value": 13175000, "count": 6 },
+    { "type": "IFI", "label": "Multilateral Banks", "value": 1558333, "count": 2 },
+    { "type": "PrivateSector", "label": "Private Sector", "value": 800000, "count": 6 }
   ],
-  "byPortfolio": [
-    { "code": "RCC", "name": "Resilience & Climate Change", "pipeline": 78000000, "cash": 0, "target": 18000000 },
-    { "code": "ERID", "name": "Economic Recovery & Inclusive Development", "pipeline": 17000000, "cash": 1000000, "target": 18000000 },
-    { "code": "TG", "name": "Transformative Governance", "pipeline": 15000000, "cash": 1000000, "target": 18000000 },
-    { "code": "CO", "name": "Country Office Cross-Cutting", "pipeline": 778733, "cash": 559290, "target": 200000 }
-  ],
-  "cashByMonth": [
-    { "month": "Jan", "y2025": 820000, "y2026": 510000 },
-    { "month": "Feb", "y2025": 1640000, "y2026": 1410000 },
-    { "month": "Mar", "y2025": 2510000, "y2026": 2559290 },
-    { "month": "Apr", "y2025": 3540000, "y2026": null },
-    { "month": "May", "y2025": 4620000, "y2026": null },
-    { "month": "Jun", "y2025": 5710000, "y2026": null },
-    { "month": "Jul", "y2025": 6890000, "y2026": null },
-    { "month": "Aug", "y2025": 8020000, "y2026": null },
-    { "month": "Sep", "y2025": 9180000, "y2026": null },
-    { "month": "Oct", "y2025": 10210000, "y2026": null },
-    { "month": "Nov", "y2025": 11020000, "y2026": null },
-    { "month": "Dec", "y2025": 11876410, "y2026": null }
+  "deliveryByPortfolio": [
+    { "code": "RCC", "name": "Resilience & Climate Change", "annualTarget": 16598363, "budget": 5390342, "expenditure": 608379, "pipeline": 78312388, "cash": 207000 },
+    { "code": "ERID", "name": "Economic Recovery & Inclusive Development", "annualTarget": 11315176, "budget": 8957459, "expenditure": 910434, "pipeline": 17111111, "cash": 1970693 },
+    { "code": "TG", "name": "Transformative Governance", "annualTarget": 26327256, "budget": 13895095, "expenditure": 1787253, "pipeline": 15355233, "cash": 12258007 }
   ],
   "topDonors": [
-    { "rank": 1, "name": "European Union", "type": "DAC", "pipeline": 18400000, "cash": 1240000 },
-    { "rank": 2, "name": "World Bank", "type": "IFI", "pipeline": 15600000, "cash": 0 },
-    { "rank": 3, "name": "Green Climate Fund", "type": "Vertical_Fund", "pipeline": 14800000, "cash": 0 },
-    { "rank": 4, "name": "Sweden (Sida)", "type": "DAC", "pipeline": 11900000, "cash": 820000 },
-    { "rank": 5, "name": "Global Environment Facility", "type": "Vertical_Fund", "pipeline": 9700000, "cash": 0 },
-    { "rank": 6, "name": "United Arab Emirates", "type": "GCC", "pipeline": 8900000, "cash": 320000 },
-    { "rank": 7, "name": "Saudi Fund for Development", "type": "GCC", "pipeline": 6470000, "cash": 0 },
-    { "rank": 8, "name": "Norway", "type": "DAC", "pipeline": 5800000, "cash": 510000 },
-    { "rank": 9, "name": "FCDO (UK)", "type": "DAC", "pipeline": 4900000, "cash": 380000 },
-    { "rank": 10, "name": "Germany (BMZ)", "type": "DAC", "pipeline": 4100000, "cash": 290000 }
-  ]
+    { "name": "Green Climate Fund", "type": "Vertical_Fund", "pipeline": 19507368, "cash": 0, "opportunities": 2 },
+    { "name": "International Climate Initiative (IKI)", "type": "Vertical_Fund", "pipeline": 17160048, "cash": 0, "opportunities": 1 },
+    { "name": "Global Environment Facility", "type": "Vertical_Fund", "pipeline": 10497973, "cash": 0, "opportunities": 5 },
+    { "name": "Somalia Joint Fund (MPTF)", "type": "MPTF", "pipeline": 9375000, "cash": 10068225, "opportunities": 4 },
+    { "name": "Switzerland (SDC)", "type": "DAC", "pipeline": 6500000, "cash": 0, "opportunities": 2 },
+    { "name": "Adaptation Fund", "type": "Vertical_Fund", "pipeline": 6000000, "cash": 0, "opportunities": 2 },
+    { "name": "Qatar (Government of)", "type": "GCC", "pipeline": 5514000, "cash": 0, "opportunities": 2 },
+    { "name": "Saudi Fund for Development", "type": "GCC", "pipeline": 5400000, "cash": 0, "opportunities": 2 },
+    { "name": "UN Peacebuilding Fund", "type": "MPTF", "pipeline": 3800000, "cash": 1906359, "opportunities": 2 },
+    { "name": "Japan", "type": "DAC", "pipeline": 3555233, "cash": 0, "opportunities": 2 }
+  ],
+  "donorRegister": [
+    { "donor": "Green Climate Fund", "type": "Vertical_Fund", "priorities": "Climate adaptation, ecosystem resilience", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "International Climate Initiative (IKI)", "type": "Vertical_Fund", "priorities": "NDC implementation, climate co-benefits", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Global Environment Facility", "type": "Vertical_Fund", "priorities": "Biodiversity, land degradation", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Adaptation Fund", "type": "Vertical_Fund", "priorities": "Local-level adaptation", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Somalia Joint Fund (MPTF)", "type": "MPTF", "priorities": "SDP priorities, pooled programming", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "UN Peacebuilding Fund", "type": "MPTF", "priorities": "Reconciliation, transitional justice", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "European Union", "type": "Multilateral", "priorities": "Governance, rule of law, migration", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "World Bank", "type": "IFI", "priorities": "Public sector reform, recovery", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "African Development Bank", "type": "IFI", "priorities": "Infrastructure, regional integration", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Switzerland (SDC)", "type": "DAC", "priorities": "Resilience, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Japan", "type": "DAC", "priorities": "Human security, peacebuilding", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Sweden (Sida)", "type": "DAC", "priorities": "Gender, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Norway", "type": "DAC", "priorities": "Climate, peace", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Germany (BMZ)", "type": "DAC", "priorities": "Resilience, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Finland", "type": "DAC", "priorities": "Education, gender", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Italy (AICS)", "type": "DAC", "priorities": "Migration, livelihoods", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Denmark", "type": "DAC", "priorities": "Climate, fragility", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Netherlands", "type": "DAC", "priorities": "Rule of law, water", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "United Kingdom (FCDO)", "type": "DAC", "priorities": "Stabilisation, governance", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "United States (USAID)", "type": "DAC", "priorities": "Resilience, livelihoods", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Saudi Fund for Development", "type": "GCC", "priorities": "Infrastructure, education", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Qatar (Government of)", "type": "GCC", "priorities": "Humanitarian, infrastructure", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "United Arab Emirates", "type": "GCC", "priorities": "Health, education", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Kuwait Fund", "type": "GCC", "priorities": "Infrastructure", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Hormuud Telecom", "type": "PrivateSector", "priorities": "Digital inclusion, fintech", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Premier Bank", "type": "PrivateSector", "priorities": "SME finance, financial inclusion", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "green" },
+    { "donor": "Salaam Bank", "type": "PrivateSector", "priorities": "Islamic finance, MSMEs", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Dahabshiil Group", "type": "PrivateSector", "priorities": "Remittances, diaspora", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Coca-Cola Beverages Africa", "type": "PrivateSector", "priorities": "Youth, supply chains", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" },
+    { "donor": "Bill & Melinda Gates Foundation", "type": "Foundation", "priorities": "Health systems, agriculture", "lastEngagement": "—", "nextAction": "—", "visibility": "—", "risk": "—", "rag": "amber" }
+  ],
+  "opportunities": [
+    { "programme": "Somalia Climate Resilience & Adaptation Programme", "donor": "Green Climate Fund", "portfolio": "RCC", "stage": "B", "pipeline": 12500000, "adjusted2026": 1875000, "probability": 0.65, "deadline": "2026-06-15" },
+    { "programme": "Coastal Ecosystems & Blue Economy", "donor": "Green Climate Fund", "portfolio": "RCC", "stage": "B", "pipeline": 7007368, "adjusted2026": 1051105, "probability": 0.6, "deadline": "2026-07-30" },
+    { "programme": "Just Transition for Pastoralist Communities", "donor": "International Climate Initiative (IKI)", "portfolio": "RCC", "stage": "C", "pipeline": 17160048, "adjusted2026": 1287004, "probability": 0.45, "deadline": "2026-09-01" },
+    { "programme": "Land Degradation Neutrality Programme", "donor": "Global Environment Facility", "portfolio": "RCC", "stage": "B", "pipeline": 4500000, "adjusted2026": 720000, "probability": 0.7, "deadline": "2026-05-20" },
+    { "programme": "Biodiversity & Protected Areas", "donor": "Global Environment Facility", "portfolio": "RCC", "stage": "C", "pipeline": 3000000, "adjusted2026": 270000, "probability": 0.4, "deadline": "2026-08-15" },
+    { "programme": "Local Adaptation in Banadir & Galmudug", "donor": "Adaptation Fund", "portfolio": "RCC", "stage": "B", "pipeline": 6000000, "adjusted2026": 600000, "probability": 0.55, "deadline": "2026-06-30" },
+    { "programme": "Joint SDG Fund — Local Governance", "donor": "Somalia Joint Fund (MPTF)", "portfolio": "TG", "stage": "A", "pipeline": 4250000, "adjusted2026": 1190000, "probability": 0.85, "deadline": "2026-04-30" },
+    { "programme": "Stabilisation in Recovered Areas", "donor": "UN Peacebuilding Fund", "portfolio": "TG", "stage": "B", "pipeline": 3800000, "adjusted2026": 950000, "probability": 0.7, "deadline": "2026-05-10" },
+    { "programme": "Public Sector Reform & Service Delivery", "donor": "Switzerland (SDC)", "portfolio": "TG", "stage": "B", "pipeline": 4500000, "adjusted2026": 540000, "probability": 0.6, "deadline": "2026-07-15" },
+    { "programme": "Inclusive Politics & Women in Leadership", "donor": "Sweden (Sida)", "portfolio": "TG", "stage": "C", "pipeline": 2800000, "adjusted2026": 280000, "probability": 0.5, "deadline": "2026-09-30" },
+    { "programme": "Federal-State Fiscal Transfers", "donor": "European Union", "portfolio": "TG", "stage": "C", "pipeline": 5500000, "adjusted2026": 412500, "probability": 0.45, "deadline": "2026-10-15" },
+    { "programme": "MSME Finance & Digital Economy", "donor": "Premier Bank", "portfolio": "ERID", "stage": "B", "pipeline": 2400000, "adjusted2026": 312000, "probability": 0.65, "deadline": "2026-05-25" },
+    { "programme": "Pastoralist Livelihoods Recovery", "donor": "Italy (AICS)", "portfolio": "ERID", "stage": "B", "pipeline": 3200000, "adjusted2026": 384000, "probability": 0.6, "deadline": "2026-06-20" },
+    { "programme": "Youth Employment & Skills", "donor": "Japan", "portfolio": "ERID", "stage": "C", "pipeline": 3555233, "adjusted2026": 213314, "probability": 0.4, "deadline": "2026-08-30" },
+    { "programme": "Renewable Energy Mini-Grids", "donor": "Qatar (Government of)", "portfolio": "RCC", "stage": "C", "pipeline": 5514000, "adjusted2026": 275700, "probability": 0.35, "deadline": "2026-11-01" },
+    { "programme": "Water for Resilience", "donor": "Saudi Fund for Development", "portfolio": "RCC", "stage": "C", "pipeline": 5400000, "adjusted2026": 270000, "probability": 0.35, "deadline": "2026-10-30" }
+  ],
+  "agreementsReview": {
+    "reviewed": 13,
+    "signed": 8,
+    "pendingClearance": 4,
+    "complianceChecks": "Completed"
+  },
+  "fundApplications": {
+    "submitted": 9,
+    "approved": 13,
+    "pending": 6,
+    "fundingSecured": 2600000
+  },
+  "innovativeFinance": [
+    { "id": "blended", "title": "Blended Finance", "stage": "Pipeline", "count": 3, "value": 8200000, "description": "DFI co-investment structures under exploration" },
+    { "id": "climate", "title": "Climate Finance", "stage": "Pipeline", "count": 12, "value": 58614388, "description": "GCF, AF, IKI and GEF active opportunities" },
+    { "id": "green-bonds", "title": "Green / Blue Bonds", "stage": "Exploratory", "count": 1, "value": 0, "description": "Initial scoping with treasury partners" },
+    { "id": "sukuk", "title": "Islamic Finance / Sukuk", "stage": "Exploratory", "count": 2, "value": 0, "description": "Engagement with IsDB and regional Islamic banks" },
+    { "id": "insurance", "title": "Insurance / Risk Financing", "stage": "Concept", "count": 1, "value": 0, "description": "Climate risk insurance pilot in design" },
+    { "id": "diaspora", "title": "Diaspora Financing", "stage": "Concept", "count": 1, "value": 0, "description": "Diaspora bond feasibility under review" },
+    { "id": "crowd", "title": "Crowd Financing", "stage": "Exploratory", "count": 0, "value": 0, "description": "Platform partnerships being scoped" },
+    { "id": "private", "title": "Private Sector Pipeline", "stage": "Pipeline", "count": 6, "value": 800000, "description": "Hormuud, Premier Bank and others engaged" },
+    { "id": "bankable", "title": "Bankable Projects Readiness", "stage": "Concept", "count": 4, "value": 0, "description": "Project preparation facility in development" }
+  ],
+  "deRiskingInstruments": [
+    { "instrument": "Partial Credit Guarantees", "provider": "World Bank / MIGA", "status": "Available", "useCase": "Currency & political risk for blended deals" },
+    { "instrument": "First-Loss Capital", "provider": "Vertical Funds (GCF, GEF)", "status": "Available", "useCase": "Catalytic layer in blended structures" },
+    { "instrument": "Technical Assistance Facilities", "provider": "Bilateral DAC partners", "status": "Available", "useCase": "Project preparation & due diligence" },
+    { "instrument": "Climate Risk Insurance", "provider": "ARC, regional insurers", "status": "In design", "useCase": "Pastoralist drought response" },
+    { "instrument": "Currency Hedging", "provider": "TCX, MFX", "status": "Under review", "useCase": "Local-currency lending mitigation" }
+  ],
+  "toolkits": [
+    { "id": "sops", "title": "Partnership SOPs", "description": "Standard operating procedures for donor engagement" },
+    { "id": "briefs", "title": "Engagement Briefs & Talking Points", "description": "Donor-specific briefs for senior engagements" },
+    { "id": "concepts", "title": "Concept Notes Library", "description": "Curated bank of concept notes and one-pagers" },
+    { "id": "proposals", "title": "Proposal Templates", "description": "Templates aligned to UNDP and donor formats" },
+    { "id": "agreements", "title": "Standard Agreements & MoUs", "description": "Pre-cleared partnership and contribution templates" },
+    { "id": "dueDiligence", "title": "Due Diligence Checklists", "description": "Risk-tiered checklists for new partners" },
+    { "id": "visibility", "title": "Visibility & Communications Assets", "description": "Brand guidelines, logos, donor recognition kits" },
+    { "id": "calendar", "title": "Donor Reporting Calendar", "description": "Reporting cadence and obligations by donor" },
+    { "id": "unity", "title": "UNITY Guidance", "description": "Workflow guidance for the UNITY platform" },
+    { "id": "innovation", "title": "Innovative Finance References", "description": "Blended, climate and Islamic finance primers" },
+    { "id": "privateSector", "title": "Private Sector Due Diligence", "description": "Vetting and engagement protocols" },
+    { "id": "pooled", "title": "Pooled Fund References", "description": "Joint Fund and MPTF guidance" },
+    { "id": "policy", "title": "CPD, UNJSPF & NTP References", "description": "Strategic frameworks and national plans" }
+  ],
+  "team": [
+    { "name": "Country Director", "role": "Senior Strategic Lead", "email": "—", "focus": "Overall partnership strategy & leadership" },
+    { "name": "Partnership Specialist", "role": "Partnerships Lead", "email": "—", "focus": "Resource mobilization, donor relations" },
+    { "name": "Resource Mobilization Officer", "role": "RM Officer", "email": "—", "focus": "Pipeline management, UNITY workflow" },
+    { "name": "Innovative Finance Lead", "role": "Innovative Finance", "email": "—", "focus": "Blended, climate, Islamic instruments" },
+    { "name": "Private Sector Engagement", "role": "PS Officer", "email": "—", "focus": "Corporate partnerships, due diligence" },
+    { "name": "Communications Specialist", "role": "Comms Lead", "email": "—", "focus": "Visibility, donor reporting, media" },
+    { "name": "Programme Analyst", "role": "Programme Analyst", "email": "—", "focus": "Portfolio analytics, delivery monitoring" },
+    { "name": "Partnership Associate", "role": "Associate", "email": "—", "focus": "Coordination, knowledge management" }
+  ],
+  "faqs": [
+    { "q": "How is this dashboard refreshed?", "a": "The data file is updated each month from the pipeline tracker, UNITY exports, and the Atlas/Quantum cash receipts ledger." },
+    { "q": "What does Probability-Weighted 2026 represent?", "a": "It is the sum of the 2026 portion of each opportunity's pipeline value multiplied by its probability of success — an expected-value view of next-year resource mobilization." },
+    { "q": "Which stages map to UNITY?", "a": "Stages A through D align to the UNITY workflow: Highly Probable (A), Advanced (B), In Development (C), Early Stage (D)." },
+    { "q": "Where do Cash figures come from?", "a": "Cash Received YTD is drawn directly from Atlas/Quantum and reflects donor receipts cleared by the country office, not commitments." }
+  ],
+  "pipelineStages": [
+    { "id": "scouting", "label": "Scouting & Scoping", "stageMap": "D", "count": 6, "value": 0, "examples": ["Diaspora bond feasibility", "Sukuk scoping with IsDB", "Crowd-finance pilot exploration"] },
+    { "id": "co-design", "label": "Co-Designing", "stageMap": "C", "count": 13, "value": 38974048, "examples": ["Just Transition (IKI)", "Federal-State Fiscal Transfers (EU)", "Youth Employment & Skills (Japan)"] },
+    { "id": "drafting", "label": "Drafting", "stageMap": "B (15)", "count": 15, "value": 44600000, "examples": ["Coastal Ecosystems & Blue Economy", "Land Degradation Neutrality", "Public Sector Reform"] },
+    { "id": "submission", "label": "Submission", "stageMap": "B (7)", "count": 7, "value": 20870446, "examples": ["Climate Resilience & Adaptation (GCF)", "Local Adaptation (Adaptation Fund)", "Stabilisation in Recovered Areas"] },
+    { "id": "approved", "label": "Approved", "stageMap": "A", "count": 3, "value": 6334239, "examples": ["Joint SDG Fund — Local Governance", "Pastoralist Livelihoods Recovery", "MSME Finance Pilot"] }
+  ],
+  "communications": {
+    "campaigns": { "active": "—", "label": "Active Campaigns" },
+    "media": { "active": "—", "label": "Media Products" },
+    "events": { "active": "—", "label": "Events" }
+  }
 }

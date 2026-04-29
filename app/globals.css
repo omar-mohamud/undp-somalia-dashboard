@@ -4,17 +4,24 @@
 
 :root {
   --color-undp: #006eb5;
+  --color-undp-dark: #0468a0;
   --color-ink: #0a1628;
   --color-muted: #64748b;
-  --color-border-soft: #e2e8f0;
+  --color-border: #e2e8f0;
+  --color-surface: #ffffff;
+  --color-surface-2: #f8fafc;
 }
 
 html,
 body {
-  background: #fdfdfb;
+  background: #fbfbf9;
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "cv11";
+}
+
+html {
   font-feature-settings: "ss01", "cv11";
 }
 
@@ -23,23 +30,18 @@ body {
   color: var(--color-ink);
 }
 
+.tabular {
+  font-feature-settings: "tnum" on, "lnum" on;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
 .label-eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 11px;
   font-weight: 500;
   color: var(--color-muted);
-}
-
-.hairline {
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(10, 22, 40, 0.08) 8%,
-    rgba(10, 22, 40, 0.08) 92%,
-    transparent
-  );
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
 }
 
 .serif-title {
@@ -48,13 +50,75 @@ body {
   letter-spacing: -0.015em;
 }
 
-/* Recharts cleanup */
+.section-numeral {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(10, 22, 40, 0.08) 6%,
+    rgba(10, 22, 40, 0.08) 94%,
+    transparent
+  );
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.card:hover {
+  border-color: #cbd5e1;
+}
+
+.card-soft {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+}
+
+.tile-hover {
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+.tile-hover:hover {
+  background: var(--color-surface-2);
+  border-color: #cbd5e1;
+}
+
+/* thin custom scrollbar for table panels */
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* Recharts overrides */
 .recharts-cartesian-axis-tick text {
   fill: #94a3b8;
   font-size: 11px;
   letter-spacing: 0.04em;
 }
-
 .recharts-tooltip-wrapper {
   outline: none !important;
+}
+.recharts-default-tooltip {
+  background: #ffffff !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 2px !important;
+  box-shadow: 0 1px 3px rgba(10, 22, 40, 0.04) !important;
 }

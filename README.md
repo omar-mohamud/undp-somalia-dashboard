@@ -1,8 +1,8 @@
-# UNDP Somalia · Partnership & Communication Dashboard
+# UNDP Somalia · Partnership Dashboard
 
-A static, donor-facing dashboard for the UNDP Somalia Country Office Partnership
-& Communication team. Single scrolling page, editorial aesthetic, built with
-Next.js 14, Tailwind CSS, Recharts, and Framer Motion.
+An executive-grade, tab-based dashboard for the UNDP Somalia Country Office
+Partnership & Communication team. Built with Next.js 14, Tailwind, Recharts
+and Framer Motion. Static-exportable, deployable to Vercel.
 
 ## Run locally
 
@@ -16,65 +16,64 @@ Open http://localhost:3000.
 ## Update data
 
 All numbers come from a single file: [`data/data.json`](./data/data.json).
+The file is the only source of truth for every tab. Edit it directly and
+the dashboard refreshes.
 
-Edit the JSON directly to refresh the dashboard. The shape is:
+Top-level keys:
 
-```ts
-{
-  asOfDate: "YYYY-MM-DD",
-  lastUpdated: "YYYY-MM-DD",
-  kpis: { totalPipeline, adjustedPipeline2026, cashReceived2026,
-          annualTarget, totalBudget, totalExpenditure,
-          pctDeliveryTarget, pctDeliveryBudget,
-          opportunityCount, donorCount, ... },
-  pipelineByStage: [{ stage, label, value, count, order }],
-  pipelineByDonorType: [{ type, label, value }],
-  byPortfolio: [{ code, name, pipeline, cash, target }],
-  cashByMonth: [{ month, y2025, y2026 }],
-  topDonors: [{ rank, name, type, pipeline, cash }]
-}
-```
+| Key | Drives |
+| --- | --- |
+| `asOfDate`, `lastUpdated` | Header timestamps |
+| `snapshot` | Tab 1 — eight KPI tiles |
+| `donorTypeCounts` / `pipelineByDonorType` | Tab 1 charts |
+| `pipelineByStage` | Tab 1 stage funnel |
+| `donorRegister` | Tab 2 register table |
+| `pipeline` / `delivery` | Tab 3 hero metrics |
+| `opportunities` | Tab 3 live opportunities table |
+| `agreementsReview` / `fundApplications` | Tab 3 right column |
+| `innovativeFinance` / `deRiskingInstruments` | Tab 4 |
+| `toolkits` | Tab 5 resource grid |
+| `team` / `faqs` | Tab 6 |
+| `pipelineStages` | Tab 8 stage cards |
 
-A future `scripts/generate.py` can read `pipeline_and_programme_v2.xlsx` and
-emit this JSON; for now the file is hand-maintained.
-
-## Deploy (Vercel)
-
-1. Push the repo to GitHub.
-2. Import the repo at https://vercel.com/new.
-3. Accept defaults (Framework: Next.js). No environment variables required.
-
-Or, via the CLI:
+## Build & deploy (Vercel)
 
 ```bash
-npm i -g vercel
-vercel
+npm run build       # produces /out — static export
 ```
+
+Push to GitHub and import the repo at https://vercel.com/new. Framework
+detection picks Next.js automatically; no env vars are required. The
+project is configured for static export (`output: "export"` in
+`next.config.js`).
 
 ## Project layout
 
 ```
-app/                Next.js App Router entry
-  layout.tsx        Fonts (Inter + Newsreader) and shell
-  page.tsx          Single scrolling page composition
-  globals.css       Tailwind + small global utilities
-components/         Each section as its own component
+app/                Next.js App Router shell (layout, page, globals.css)
+components/
+  Dashboard.tsx     Tab state + animated crossfade
+  TopNav.tsx        Two-row masthead with animated underline (layoutId)
+  primitives/       KpiTile, RagDot, TrendArrow, StatusPill, SectionLabel
+  charts/           DonorTypeBar, StageFunnel
+  tabs/             One file per tab (Snapshot, DonorRelations, …)
 data/data.json      Single source of truth for all numbers
-lib/format.ts       $110.8M / 7.8% formatting helpers
+lib/format.ts       $110.8M · 7.8% · date helpers · RAG / trend mappings
 public/             UNDP logo
 ```
 
-## Design notes
+## Design system
 
-- **Numbers are the hero.** KPI values lead at large weight-300 type with small
-  uppercase eyebrow labels.
-- **Restrained palette.** UNDP blue used as accent; ink/muted/surface tokens
-  carry the rest. No drop shadows; lift comes from background contrast and
-  hairline rules.
-- **Charts custom-styled.** Recharts defaults are stripped and rebuilt; the
-  stage funnel and stacked bar are custom SVG/divs rather than the built-in
-  Recharts equivalents.
-- **Typography.** Inter for body, Newsreader (serif) for the page title and
-  every section heading — that pairing alone makes the report feel editorial.
-- **Animations.** Subtle fade-up on scroll, staggered, with prefers-reduced-motion
-  honoured.
+- **Inter** for body text, **Newsreader** (serif) for section headings,
+  **IBM Plex Mono** for tabular figures and editorial numerals.
+- Strict 8px spacing grid; hairline 1px borders only — no drop shadows.
+- UNDP blue (`#006EB5`) used as a single accent against an editorial
+  near-white surface (`#FBFBF9`).
+- Numbers set in light weight at large sizes; tabular numerals everywhere
+  numbers appear.
+- Charts strip the Recharts defaults (gridlines, axis lines, legends) and
+  rebuild from custom SVG/divs.
+- Status pills are outline-only with uppercase tracked monospace.
+- RAG dots are 8px circles, not traffic-light buttons.
+- Tab transitions are a Framer-Motion crossfade; the active-tab underline
+  is a single `motion.div` with a shared `layoutId` for smooth slide.

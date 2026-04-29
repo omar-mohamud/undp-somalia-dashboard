@@ -34,3 +34,61 @@ export function formatDate(iso: string): string {
     timeZone: "UTC",
   });
 }
+
+export function formatDateShort(iso: string): string {
+  const d = new Date(iso + "T00:00:00Z");
+  return d.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}
+
+export function ragColor(rag: "green" | "amber" | "red" | string): string {
+  switch (rag) {
+    case "green":
+      return "#059669";
+    case "amber":
+      return "#D97706";
+    case "red":
+      return "#DC2626";
+    default:
+      return "#94A3B8";
+  }
+}
+
+export function trendGlyph(trend: "up" | "down" | "flat" | string): string {
+  switch (trend) {
+    case "up":
+      return "↑";
+    case "down":
+      return "↓";
+    case "flat":
+      return "→";
+    default:
+      return "·";
+  }
+}
+
+export function trendColor(trend: "up" | "down" | "flat" | string): string {
+  switch (trend) {
+    case "up":
+      return "#059669";
+    case "down":
+      return "#DC2626";
+    case "flat":
+      return "#64748B";
+    default:
+      return "#94A3B8";
+  }
+}
+
+export function initials(name: string): string {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((s) => s[0]!.toUpperCase())
+    .join("");
+}
